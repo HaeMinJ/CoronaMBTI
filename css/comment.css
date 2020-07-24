@@ -35,7 +35,7 @@ h1{
 
 #ctitle1{
     z-index: 3;
-    display: inline-block;
+    display: inline;
     position: relative; 
     font-weight: bold;
     font-size: 3rem;
