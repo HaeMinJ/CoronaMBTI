@@ -225,7 +225,8 @@ hr {
     background-color: #749AAA;
     width: 25%;
     height: 3vw;
-    padding-top: 1.6%;
+    padding-top: 1%;
+    padding-bottom: 1.3%;
     position: relative;
     margin-left: 37%;
     margin-top: 5%;
@@ -249,7 +250,7 @@ hr {
     position: relative;
     transition: 0.5s;
   }
-  
+
   .nextButton span:after {
     content: '\00bb';
     position: absolute;
@@ -258,11 +259,11 @@ hr {
     right: -20px;
     transition: 0.5s;
   }
-  
+
   .nextButton:hover span {
     padding-right: 30px;
   }
-  
+
   .nextButton:hover span:after {
     opacity: 1;
     right: 0;
