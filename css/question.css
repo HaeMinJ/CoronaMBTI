@@ -1,0 +1,54 @@
+h1 {
+  font-family: "Noto Sans Malayalam UI";
+  font-weight: bold;
+  color: white;
+  font-size: 2em;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+#margin_Box {
+  margin-left: 15%;
+}
+
+#margin_progress {
+  margin-left: 17%;
+}
+
+.box {
+  position: relative;
+  float: left;
+  background-color: rgba(196, 196, 196, 0.3);
+  width: 20%;
+  height: 15%;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  margin: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  z-index: 1;
+}
+
+.progress {
+  float: left;
+  position: relative;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 1.5em;
+  color: "4D4D4D";
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.progressBar {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 10%;
+  background-color: rgba(234, 234, 234, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
