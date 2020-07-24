@@ -1,27 +1,124 @@
+<!--
+  ~ Copyright (c) 2020. Team Yojongdo, All rights reserved
+  -->
+
 <!DOCTYPE html>
-<html lang="ko" dir="ltr">
-  <head>
+<html lang="ko">
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>question</title>
     <link rel="stylesheet" href="../css/background.css">
     <link rel="stylesheet" href="../css/question.css"/>
-  </head>
-  <body>
-    <div>
-        <img id = "background" src="../assets/background.svg">
-    </div>
-    <br />
-    <h1>코로나 관련 성격 유형 검사</h3>
-    <div class="box" id="margin_Box">총 검사시간은<br />20분 이내입니다.</div>
-    <div class="box">분위기에 휩쓸리지 않고<br />정직하게 답변하세요</div>
-    <div class="box">중립적인 선택은<br />되도록 피해주세요.</div>
+</head>
+
+<body>
+<div>
+    <img alt="배경 사진" id="background" src="../assets/background.svg">
+</div>
+<br/>
+<h1>코로나 관련 성격 유형 검사</h1>
+    <div class="box" id="margin_Box">총 검사시간은<br>20분 이내입니다.</div>
+    <div class="box">분위기에 휩쓸리지 않고<br>정직하게 답변하세요.</div>
+    <div class="box">중립적인 선택은<br>되도록 피해주세요.</div>
 
     <div class="progress" id="margin_progress">0%</div>
-    <div class="progressBar"></div>
+    <div class="progressBarBackground"><span class="progressBar"></span></div>
     <div class="progress">100%</div>
 
-    <div>
+    <div class="question">
+        <div class="statement">
+            <!--질문멘트-->현재 사회적 거리두기 몇 단계인지 알고있다.
+        </div>
+        <div class="decision">
+            <div class="captionAgree">동의</div>
+            <div class="options">
+                <div class="agreeMax"><span class="check"></span></div>
+                <div class="agreeMed"><span class="check"></span></div>
+                <div class="agreeMin"><span class="check"></span></div>
+                <div class="neutral"><span class="check"></span></div>
+                <div class="disagreeMin"><span class="check"></span></div>
+                <div class="disagreeMed"><span class="check"></span></div>
+                <div class="disagreeMax"><span class="check"></span></div>
+            </div>
+            <div class="captionDisagree">비동의</div>
+        </div>
+        <hr/>
 
+        <div class="statement">
+            <!--질문멘트-->코로나 관련 기부를 하고 싶다.
+        </div>
+        <div class="decision">
+            <div class="captionAgree">동의</div>
+            <div class="options">
+                <div class="agreeMax"><span class="check"></span></div>
+                <div class="agreeMed"><span class="check"></span></div>
+                <div class="agreeMin"><span class="check"></span></div>
+                <div class="neutral"><span class="check"></span></div>
+                <div class="disagreeMin"><span class="check"></span></div>
+                <div class="disagreeMed"><span class="check"></span></div>
+                <div class="disagreeMax"><span class="check"></span></div>
+            </div>
+            <div class="captionDisagree">비동의</div>
+        </div>
+        <hr/>
+
+        <div class="statement">
+            <!--질문멘트-->마스크 챙기는 것을 까먹는다.
+        </div>
+        <div class="decision">
+            <div class="captionAgree">동의</div>
+            <div class="options">
+                <div class="agreeMax"><span class="check"></span></div>
+                <div class="agreeMed"><span class="check"></span></div>
+                <div class="agreeMin"><span class="check"></span></div>
+                <div class="neutral"><span class="check"></span></div>
+                <div class="disagreeMin"><span class="check"></span></div>
+                <div class="disagreeMed"><span class="check"></span></div>
+                <div class="disagreeMax"><span class="check"></span></div>
+            </div>
+            <div class="captionDisagree">비동의</div>
+        </div>
+        <hr/>
+
+        <div class="statement">
+            <!--질문멘트-->코로나로 인해 사교활동을 못해 아쉽다.
+        </div>
+        <div class="decision">
+            <div class="captionAgree">동의</div>
+            <div class="options">
+                <div class="agreeMax"><span class="check"></span></div>
+                <div class="agreeMed"><span class="check"></span></div>
+                <div class="agreeMin"><span class="check"></span></div>
+                <div class="neutral"><span class="check"></span></div>
+                <div class="disagreeMin"><span class="check"></span></div>
+                <div class="disagreeMed"><span class="check"></span></div>
+                <div class="disagreeMax"><span class="check"></span></div>
+            </div>
+            <div class="captionDisagree">비동의</div>
+        </div>
+        <hr/>
+
+        <div class="statement">
+            <!--질문멘트-->코로나로 인해 좋아진 환경에 대해 긍정적이다.
+        </div>
+        <div class="decision">
+            <div class="captionAgree">동의</div>
+            <div class="options">
+                <div class="agreeMax"><span class="check"></span></div>
+                <div class="agreeMed"><span class="check"></span></div>
+                <div class="agreeMin"><span class="check"></span></div>
+                <div class="neutral"><span class="check"></span></div>
+                <div class="disagreeMin"><span class="check"></span></div>
+                <div class="disagreeMed"><span class="check"></span></div>
+                <div class="disagreeMax"><span class="check"></span></div>
+            </div>
+            <div class="captionDisagree">비동의</div>
+        </div>
+        <hr/>
+        <div class="nextButton">다음</div>
     </div>
-  </body>
+</body>
+
 </html>

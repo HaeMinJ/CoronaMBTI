@@ -88,7 +88,6 @@ h1 {
 
 button {
     z-index: 3;
-    position: absolute;
     background: #749AAA;
     top: 5%;
     color: white;
@@ -108,17 +107,10 @@ button {
     cursor: text;
 }
 
-<<<<<<< HEAD
-#age input[type="number"]{
-    width: 30%;
-    height: auto;
-    line-height : normal;
-=======
 #gender input[type="number"] {
     width: 40%;
     height: auto;
     line-height: normal;
->>>>>>> d55c91726a2c06073ce66618c9ea838ec7ed3de8
     padding: .8vw .5vw;
     font-family: inherit;
     border: 1px solid #999;
@@ -127,52 +119,4 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    
-}
-
-#inputage{
-    z-index: 3;
-    position: absolute;
-    top: 17%;
-    left: 4%;
-    font-family: Noto Sans Malayalam UI;
-}
-
-#ex_input{
-    z-index: 3;
-    width:100px;
-    height:100px;
-    font-size:1.4rem;
-}
-
-#agefont{
-    z-index: 3;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-#inputgen{
-    z-index: 3;
-    position: absolute;
-    top: 25%;
-    left: 4%;
-    font-family: Noto Sans Malayalam UI;
-}
-
-#genfont{
-    z-index: 3;
-    font-size: 2rem;
-    font-weight: bold;
-    
-}
-
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-input[type=radio] {
-    border: 0px;
-    width: 10%;
-    height: 2vw;
 }

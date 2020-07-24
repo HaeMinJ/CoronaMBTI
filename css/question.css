@@ -1,58 +1,245 @@
+/*
+ * Copyright (c) 2020. Team Yojongdo, All rights reserved
+ */
+
 h1 {
-  font-family: "Noto Sans Malayalam UI";
-  font-weight: bold;
-  color: white;
-  font-size: 2em;
-  z-index: 1;
-  position: relative;
-  text-align: center;
+    font-family: "Noto Sans Malayalam UI";
+    font-weight: bold;
+    color: white;
+    font-size: 2vw;
+    z-index: 1;
+    position: relative;
+    text-align: center;
 }
 
 #margin_Box {
-  margin-left: 15%;
+    margin-left: 15%;
 }
 
 #margin_progress {
-  margin-left: 15%;
+    margin-left: 15%;
 }
 
 .box {
-  position: relative;
-  float: left;
-  background-color: rgba(196, 196, 196, 0.3);
-  width: 20%;
-  height: 15%;
-  text-align: center;
-  font-size: 1.2em;
-  color: white;
-  margin: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  z-index: 1;
+    position: relative;
+    float: left;
+    background-color: rgba(196, 196, 196, 0.3);
+    width: 20%;
+    height: 15%;
+    text-align: center;
+    font-size: 1.2vw;
+    color: white;
+    margin: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    z-index: 1;
 }
 
 .progress {
-  margin-top: auto;
-  float: left;
-  position: relative;
-  font-family: "roboto";
-  font-weight: bold;
-  font-size: 1.5em;
-  color: "4D4D4D";
-  margin-left: 1%;
-  margin-right: 1%;
-  z-index: 1;
+    margin-top: 2%;
+    float: left;
+    position: relative;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #4D4D4D;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: 1;
+}
+
+.progressBarBackground {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 4%;
+    background-color: rgba(195, 195, 195, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 1%;
+    z-index: 1;
 }
 
 .progressBar {
-  float: left;
+    margin-top: 2%;
+    float: left;
+    width: 50%;
+    height: 4%;
+    background-color: rgba(195, 195, 195, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 1%;
+    position: relative;
+    z-index: 1;
+}
+
+.question {
+    position: relative;
+    margin-left: 15%;
+    margin-top: 3%;
+    padding-top: 4%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 1;
+    width: 70%;
+    height: 85vw;
+    display: table;
+    margin-bottom: 5%;
+}
+
+.captionAgree {
+    font-family: "Noto Sans Malayalam UI";
+    position: relative;
+    color: #749AAA;
+    font-size: 1.2vw;
+    font-weight: 800;
+    float: left;
+}
+
+.captionDisagree {
+    font-family: "Noto Sans Malayalam UI";
+    position: relative;
+    color: #3A3042;
+    font-size: 1.2vw;
+    font-weight: 800;
+    float: left;
+}
+
+.statement {
+    font-family: "Noto Sans Malayalam UI";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7vw;
+    color: #545454;
+    text-align: center;
+    position: relative;
+    margin-top: 4%;
+}
+
+.agreeMax {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border: 0.2vw solid #749AAA;
+    border-radius: 50%;
+    padding: 1%;
+    float: left;
+    position: relative;
+}
+
+.agreeMed {
+    width: 2vw;
+    height: 2vw;
+    background-color: white;
+    border: 0.2vw solid #749AAA;
+    border-radius: 50%;
+    padding: 1%;
+    float: left;
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+}
+
+.agreeMin {
+    width: 1vw;
+    height: 1vw;
+    background-color: white;
+    border: 0.2vw solid #749AAA;
+    border-radius: 50%;
+    padding: 1%;
+    float: left;
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.neutral {
+    width: 0.2vw;
+    height: 0.2vw;
+    background-color: white;
+    border: 0.2vw solid #A9A9A9;
+    border-radius: 50%;
+    padding: 1%;
+    float: left;
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 1.5vw;
+}
+
+.disagreeMax {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border: 0.2vw solid #3A3042;
+    border-radius: 50%;
+    padding: 1%;
+    float: left;
+    position: relative;
+    margin-left: 2vw;
+}
+
+.disagreeMed {
+    width: 2vw;
+    height: 2vw;
+    background-color: white;
+    border: 0.2vw solid #3A3042;
+    border-radius: 50%;
+    padding: 1%;
+    float: left;
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+}
+
+.disagreeMin {
+    width: 1vw;
+    height: 1vw;
+    background-color: white;
+    border: 0.2vw solid #3A3042;
+    border-radius: 50%;
+    padding: 1%;
+    float: left;
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.options {
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+hr {
+    width: 70%;
+    text-align: center;
+}
+
+.nextButton {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #749AAA;
+    width: 25%;
+    height: 3vw;
+    padding-top: 1.6%;
+    position: relative;
+    margin-left: 37%;
+    margin-top: 5%;
+}
+
+.decision {
   position: relative;
-  width: 60%;
-  height: 4%;
-  background-color: rgba(195, 195, 195, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-left: 1%;
-  z-index: 1;
+  float: left;
+  margin-left: 22%;
+  margin-bottom: 2%;
+}
+
+.options {
+  position: relative;
+  float: left;
 }
