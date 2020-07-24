@@ -21,11 +21,8 @@
         <p id="title">#당신은코로나나이팅게일?</p>
         <p id="mbti">ISFJ</p>
         <br>
+        <img id= "mbti_img" src="" alt="">
         <p id="exp">
-            한국의 자가격리 구호물품수준은 다른 나라 사람들이 놀랄 만큼 준비가 잘되어 있다. <br>
-            이런 구호물품을 관리하는 담당 업무자들이나 현장 속에서 열심히 봉사하는 간호사 혹은 의사들은 이 유형에 해당할 가능성이 높다.<br>
-            그래서 코로나 관련 담당 업무자들은 ISFJ일 가능성이 높지 않을까?<br>
-            평소에도 남을 위해 봉사하는 사람으로 담당 업무자가 아니더라도 자신의 가까운사람이 코로나가 걸릴까 걱정되며 그들을 위해 희생적인 마음을 가지고 있는 사람들이다.
         </p>
         <br>
         <hr>
@@ -35,5 +32,180 @@
     </div>
 </div>
 </body>
+<script>
+    function getParam(sname) {
+        var params = location.search.substr(location.search.indexOf("?") + 1);
+        var sval = "";
+        params = params.split("&");
+        for (var i = 0; i < params.length; i++) {
+            temp = params[i].split("=");
+            if ([temp[0]] == sname) { sval = temp[1]; }
+        }
+        return sval;
+    }
+    var e = Number.parseInt(getParam('e'));
+    var s = Number.parseInt(getParam('s'));
+    var t = Number.parseInt(getParam('t'));
+    var j = Number.parseInt(getParam('j'));
+    var title = document.getElementById('title');
+    var mbti = document.getElementById('mbti');
+    var image = document.getElementById('mbti_img');
+    var exp = document.getElementById('exp');
+    if(e>=0){
+        if(s>=0){
+            if(t>=0){
+                if(j>=0){ //ESTJ
+                    title.innerText = "#코로나상식백과";
+                    mbti.innerText = "ESTJ";
+                    image.src = "http://static-yojongdo.coronambti.com/images/estj.png"
+                    exp.innerHTML = "코로나, 이것만 지킨다면 안전해!<br>"
+                    +"그 누구보다 예방에 진심인 ESTJ는 손 소독과 마스크 착용을 빼놓지 않는다.<br>" +
+                        "머릿속에서 코로나 감염에 대한 대비책을 모두 마련해 놓았기 때문에 <br>" +
+                        "어떤 위험이 오더라도 무섭지 않다. <br>" +
+                        "친구들에게도 위험 수칙을 전파해서 도와주는 편."
+                }else{      //ESTP
+                    title.innerText = "#무한자기합리화";
+                    mbti.innerText = "ESTP";
+                    image.src = "http://static-yojongdo.coronambti.com/images/estp.png";
+                    exp.innerHTML = "음주 가무와 노는 것을 좋아하고, 회식자리도 좋아하는 ESTP에게 코로나란 재앙이다. <br>" +
+                        "계속 된 자기 합리화로 스트레스를 풀고 있지만 힘든건 매한가지.. <br>" +
+                        "오늘은 기분도 꿀꿀한데 건대나 가야겠"
+                }
+            }else{
+                if(j>=0){ //ESFJ
+                    title.innerText = "#더없는랜선친구"
+                    mbti.innerText = "ESFJ"
+                    image.src = "http://static-yojongdo.coronambti.com/images/esfj.png";
+                    exp.innerHTML = "우리 코로나로 못봐도 랜선으로 만나자! <br>" +
+                        "외향성을 지닌 성격과 남이 어떻게 지내는지를 보고 싶어하는 ESFJ는 코로나 시기에 더 없는 랜선친구가 되어줄 것이다. <br>" +
+                        "생일인데 우리 영상통화나 할까?"
+                }else{  //ESFP
+                    title.innerText = "#폰코로나"
+                    mbti.innerText = "ESFP"
+                    image.src = "http://static-yojongdo.coronambti.com/images/esfp.png";
+                    exp.innerHTML = "코로나에 대한 소식만 58123910개 수집해서 공포에 떨고 안심하고를 반복하는 유형 <br>" +
+                        "이것저것 수집해서 친구들에게 전달하며 같이 공감해주길 원한다. <br>" +
+                        "그건 아니라고..!!!"
+                }
+            }
+        }else{
+            if(t>=0){
+                if(j>=0){ //ENTJ
+                    title.innerText = "#코로나습격자";
+                    mbti.innerText = "ENTJ";
+                    image.src = "http://static-yojongdo.coronambti.com/images/entj.png";
+                    exp.innerHTML = "코로나 때문에 계획했던 일상들이 엉망이 되어버렸다. <br>" +
+                        "자신만의 해결책을 찾으며 다른 방향으로 계획하고 노력하고 있겠지만 망가져버린 계획은 누구에게나 슬픈법! <br>" +
+                        "코로나, 밤 길 조심해!!! "
+                }else{  //ENTP
+                    title.innerText = "#마스크힙스터";
+                    mbti.innerText = "ENTP";
+                    image.src = "http://static-yojongdo.coronambti.com/images/entp.png";
+                    exp.innerHTML = "활동적이고 독특한 생각을 가지고 있는 ENTP <br>" +
+                        "독특하고 독자적인 자신의 감각을 우선시하는 그들에게 마스크는 불편함 그자체 <br>" +
+                        "ENTP들은 마스크도 남들과는 다른 모양의 마스크를 구해 쓰고 다닐 것이다. <br>" +
+                        "코로나가 계속 된다면 미래의 k-pop 마스크 문화를 이끌 선두주자가 될지도...?!"
 
+                }
+            }else{
+                if(j>=0){   //ENFJ
+                    title.innerText = "#코로나영웅";
+                    mbti.innerText = "ENFJ";
+                    image.src = "http://static-yojongdo.coronambti.com/images/enfj.png";
+                    exp.innerHTML = "주변사람들에게 오지랖 넓다고 유명한 유형이다. <br>" +
+                        "평소 자꾸 귀찮게 굴어 부담스러운 친구지만 자가격리 중에 이 친구가 곁에 있다면 세상 부러울 게 없다. <br>" +
+                        "상대의 감정이 어떤지, 필요한 것과 힘든 일을 다 경청해주고 챙겨주는 영웅같은 친구이다."
+                }else{      //ENFP
+
+                }
+            }
+        }
+    }else{
+        if(s>=0){
+            if(t>=0){
+                if(j>=0){   //ISTJ
+                    title.innerText = "#가정지킴이";
+                    mbti.innerText = "ISTJ";
+                    image.src = "http://static-yojongdo.coronambti.com/images/istj.png";
+                    exp.innerHTML = "코로나로 인해 집에 있으면서 밀린 청소부터 해야할 일까지 완벽하게 다 해내는 가정지킴이~!"
+
+
+                }else{      //ISTP
+                    title.innerText = "#코로나척척박사";
+                    mbti.innerText = "ISTP";
+                    image.src = "http://static-yojongdo.coronambti.com/images/istp.png";
+                    exp.innerHTML = "하나에 꽂히면 논리적으로 뭐든 알아내려고 하는 ISTP<br>" +
+                    "매일 실시간으로 올라오는 확진자 수와 각 국가별 대응책, 백신현황 등 모두 섭렵하고 있다.<br>" +
+                            "코로나19에 대해 모르는 정보가 없을 정도다. 코로나에 대한 모든 정보는 모두 ISTP에게 물어보자!"
+
+
+
+                }
+            }else{
+                if(j>=0){   //ISFj
+                    title.innerText ="#당신은코로나나이팅게일?";
+                    mbti.innerText = "ISFJ";
+                    image.src = "http://static-yojongdo.coronambti.com/images/isfj.png";
+                    exp.innerHTML = "한국의 자가격리 구호물품 수준은 다른 나라 사람들이 놀랄 만큼 준비가 잘 되어 있다.<br>"+
+                            "이런 구호물품을 관리하는 담당 업무자들이나 현장 속에서 열심히 봉사하는 간호사 혹은 의사들은 이 유형에 해당할 가능상이 높다.<br>"+
+                        "그래서 코로나 관련 담당 업무자들은 ISFJ일 가능성이 높지 않을까?<br>"+
+                            "평소에도 남을 위해 봉사하는 사람으로 담당 업무자가 아니더라도 자신의 가까운 사람이 코로나가 걸릴까 걱정되며 그들을 위해 희생적인 마음을 가지고 있는 사람들이다."
+
+
+                }else{      //ISFP
+                    title.innerText = "#히키코로나";
+                    mbti.innerText = "ISFP";
+                    image.src = "http://static-yojongdo.coronambti.com/images/isfp.png";
+                    exp.innerHTML = "남들 눈치 보면서 흘러가는대로 조용히 할 일을 하는 ISFP.<br>"+
+                            "이 유형의 사람들은 남들이 조금만 눈치를 주면 바로 마스크를 낀다.<br>"+
+                            "남들과의 트러블을 안 만들고자 한다.<br>"+
+                            "마스크를 안 쓰고 있다가도 누군가 마스크를 사서 쓰라고 하면 불만없이 바로 사서 쓸 사람들."
+
+                }
+            }
+        }else{
+            if(t>=0){
+                if(j>=0){   //INTJ
+                    title.innerText = "#코로나가낳은괴물";
+                    mbti.innerText = "INTJ";
+                    image.src = "http://static-yojongdo.coronambti.com/images/intj.png";
+                    exp.innerHTML = "혼자 노는 것에 최적화된 INTJ에게 자가격리란 포상이다.<br>"+
+                            "이 시간동안 할게 얼마나 많은지!<br>"+
+                            "코로나가 좋은 건 아니지만 혼자 노는 나만의 시간은 너무 좋다.<br>"+
+                            "피하지 못하면 즐겨라!(원래 즐거운건 안비밀 ㅎ~)"
+
+                }else{      //INTP
+                    title.innerText = "#자가격리탈출범";
+                    mbti.innerText = "INTP";
+                    image.src = "http://static-yojongdo.coronambti.com/images/intp.png";
+                    exp.innerHTML = "먹고 자고 싸고 반복되는 일상을 살아가는 걸 숨막혀하는 INTP형.<br>"+
+                            "자가격리를 한다고 해도 유튜브를 하거나 평소 못했던 활력적인 일을 하려고 한다.<br>"+
+                            "자가격리를 하지만 최대한 도피할 곳을 찾아 움직이려고 한다.<br>"+
+                            "그들에게 자가격리는 창살없는 감옥..."
+
+                }
+            }else{
+                if(j>=0){   //INFJ
+                    title.innerText = "#코로나별거아니지~";
+                    mbti.innerText = "INFJ";
+                    image.src = "http://static-yojongdo.coronambti.com/images/infj.png";
+                    exp.innerHTML = "코로나 때문에 인간관계가 소원해졌다고?<br>"+
+                            "INFJ에겐 이해가 가지 않을 것이다.<br>"+
+                            "코로나와 같은 극한 상황에서도 사람들과 인간관계를 유지할 방버블 찾았을 것이다.<br>"+
+                            "인내심도 가장 강한 편이라 코로나를 가장 잘 견뎌내는 유형이다. 코로나 EASY~"
+
+                }else{      //INFP
+                    title.innerText = "#코로나out!";
+                    mbti.innerText = "INFP";
+                    image.src = "http://static-yojongdo.coronambti.com/images/infp.png";
+                    exp.innerHTML = "상상력이 풍부한 INFP는 불안에 떨고 있을 확률이 높다.<br>"+
+                            '"내가 코로나에 걸린다면.. 헉 나 어제 누구랑 만났지?!", "우리 가족은?!!"<br>'+
+                            "...등등 너무 많 생각하며 걱정을 할 수도 있다. 너무 걱정마!"
+
+                }
+            }
+        }
+    }
+
+</script>
 </html>

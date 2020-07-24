@@ -41,7 +41,7 @@
             v-bind:question="question"
             v-bind:key="question.id"
     ></question-item>
-    <div class="nextButton" onclick="onNextClicked()"><span>다음</span></div>
+    <div id = "nextButton" onclick="onNextClicked()"><span>다음</span></div>
 </div>
 </body>
 
@@ -58,79 +58,82 @@
         app.questions.forEach(function (question) {
             switch (question.type) {
                 case 0:
-                    answerStatus.e += question.status;
+                    answerStatus.e += Number.parseInt(question.status, 0);
                     break;
                 case 1:
-                    answerStatus.s += question.status;
+                    answerStatus.s += Number.parseInt(question.status, 0);
                     break;
                 case 2:
-                    answerStatus.t += question.status;
+                    answerStatus.t += Number.parseInt(question.status, 0);
                     break;
                 case 3:
-                    answerStatus.j += question.status;
+                    answerStatus.j += Number.parseInt(question.status, 0);
                     break;
             }
         });
         startPageIdx++;
         getJson(startPageIdx);
         if(startPageIdx == 3){
-            $('.nextButton span').innerText = "완료";
-            $('.nextButton').onclick = "onCompleteClicked()";
+            document.getElementById('nextButton').innerHTML = "<span>완료</span>";
+            document.getElementById('nextButton').onclick = onCompleteClicked;
+        }
+        for(let el of document.getElementsByClassName('radio')){
+            el.classList.remove('selected');
+        }
+
+        for(let el of document.getElementsByClassName('neutral')){
+            el.classList.add('selected');
         }
     }
     function onCompleteClicked() {
-        console.log("E : "+answerStatus.E +" S : "+answerStatus.s +" T :" +answerStatus.t+" J :"+answerStatus.j);
+        location.href = './mbti_result.html?e='+answerStatus.e+'&s='+answerStatus.s+"&t="+answerStatus.t+"&j="+answerStatus.j;
+        console.log("E : "+answerStatus.e +" S : "+answerStatus.s +" T :" +answerStatus.t+" J :"+answerStatus.j);
     }
 
-    function optionClicked(item, option) {
+    function optionClicked(event, item, option) {
         item.status = option;
-        console.log("Clicked! Op")
-    }
-    function getJson(startPage){
-        $.ajax({
-            url: 'http://static-yojongdo.coronambti.com/json/'+'mbti_page'+startPage+'.json',
-            type: 'GET',
-            dataType: "json",
-            success: displayAll
-        });
-
-        function displayAll(data){
-            Vue.component('question-item', {
-                props: ['question'],
-                template: '<div class = "question_container"><div class="statement">' +
-                    '            <!--질문멘트-->{{ question.statement }}' +
-                    '        </div>' +
-                    '        <div class="decision">' +
-                    '            <span class="captionAgree">동의</span>' +
-                    '            <div class="options">' +
-                    '                <div class="agreeMax radio agree" v-on:click="optionClicked(question,3)"><span class="check" ></span></div>' +
-                    '                <div class="agreeMed radio agree" v-on:click="optionClicked(question,2)"><span class="check"></span></div>' +
-                    '                <div class="agreeMin radio agree" v-on:click="optionClicked(question,1)"><span class="check"></span></div>' +
-                    '                <div class="neutral radio" v-on:click="optionClicked(question,0)"><span class="check"></span></div>' +
-                    '                <div class="disagreeMin radio disagree" v-on:click="optionClicked(question,-1)"><span class="check"></span></div>' +
-                    '                <div class="disagreeMed radio disagree" v-on:click="optionClicked(question,-2)"><span class="check"></span></div>' +
-                    '                <div class="disagreeMax radio disagree" v-on:click="optionClicked(question,-3)"><span class="check"></span></div>' +
-                    '            </div>' +
-                    '            <span class="captionDisagree">비동의</span>' +
-                    '        </div>' +
-                    '        <hr/></div>'
-            });
-            $('.options .radio').onclick = function(){
-                console.log("Clicked!")
-                $(this).parent().find('.radio').removeClass('selected');
-                $(this).addClass('selected');
-            };
-            app.questions = data;
+        for(let el of event.target.parentElement.getElementsByClassName('radio')){
+            el.classList.remove('selected');
         }
+        event.target.classList.add('selected');
     }
-
-    getJson(startPageIdx);
+    function getJson(startPage) {
+        fetch('http://static-yojongdo.coronambti.com/json/' + 'mbti_page' + startPage + '.json')
+            .then(response =>{
+                return response.json();
+            })
+        .then(data => {
+            app.questions = data;
+        });
+    }
+    Vue.component('question-item', {
+        props: ['question'],
+        template: '<div class = "question_container"><div class="statement">' +
+            '            <!--질문멘트-->{{ question.statement }}' +
+            '        </div>' +
+            '        <div class="decision">' +
+            '            <span class="captionAgree">동의</span>' +
+            '            <div class="options">' +
+            '                <div class="agreeMax radio agree" v-on:click="optionClicked($event, question,3)"><span class="check" ></span></div>' +
+            '                <div class="agreeMed radio agree" v-on:click="optionClicked($event, question,2)"><span class="check"></span></div>' +
+            '                <div class="agreeMin radio agree" v-on:click="optionClicked($event, question,1)"><span class="check"></span></div>' +
+            '                <div class="neutral radio selected" v-on:click="optionClicked($event, question,0)"><span class="check"></span></div>' +
+            '                <div class="disagreeMin radio disagree" v-on:click="optionClicked($event, question,-1)"><span class="check"></span></div>' +
+            '                <div class="disagreeMed radio disagree" v-on:click="optionClicked($event, question,-2)"><span class="check"></span></div>' +
+            '                <div class="disagreeMax radio disagree" v-on:click="optionClicked($event, question,-3)"><span class="check"></span></div>' +
+            '            </div>' +
+            '            <span class="captionDisagree">비동의</span>' +
+            '        </div>' +
+            '        <hr/></div>'
+    });
     var app = new Vue({
         el: '.question',
         data: {
             questions: []
         }
     })
+
+    getJson(startPageIdx);
 
 
 </script>

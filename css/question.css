@@ -251,7 +251,7 @@ hr {
     text-align: center;
 }
 
-.nextButton {
+#nextButton {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
@@ -282,7 +282,7 @@ hr {
   position: relative;
   float: left;
 }
-.nextButton span {
+#nextButton span {
     font-size: 30px;
     cursor: pointer;
     display: inline-block;
@@ -290,7 +290,7 @@ hr {
     transition: 0.5s;
   }
 
-  .nextButton span:after {
+  #nextButton span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -299,11 +299,11 @@ hr {
     transition: 0.5s;
   }
 
-  .nextButton:hover span {
+  #nextButton:hover span {
     padding-right: 30px;
   }
 
-  .nextButton:hover span:after {
+  #nextButton:hover span:after {
     opacity: 1;
     right: 0;
   }
