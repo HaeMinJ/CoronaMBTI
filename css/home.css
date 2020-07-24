@@ -85,3 +85,12 @@ h1 {
 
     color: #FFFFFF;
 }
+#emoticon {
+    display: table;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    clear: both;
+    padding: 5%;
+    margin: 5% auto;
+}
