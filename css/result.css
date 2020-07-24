@@ -94,7 +94,25 @@ color: #000000;
 
 #inform{
 
-    background-color: 5D7794;
+    float: right;
+padding:1%;
+    background-color: #5D7794;
+
+    font-family: Noto Sans Malayalam UI;
+font-style: normal;
+font-weight: bold;
+font-size: 1.2rem;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+
+#clear{
+float:center;
+    padding:1%;
+    background-color: #5D7794;
 
     font-family: Noto Sans Malayalam UI;
 font-style: normal;
