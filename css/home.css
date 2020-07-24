@@ -61,17 +61,17 @@ line-height: 27px;
 
 color: #000000;
 }
-#toptitle{
+h1{
 display: table;
 position: relative;
-margin: 0 auto;
+margin: 5% auto;
 clear: both;
 z-index: 2;
 
 font-family: Noto Sans Malayalam UI;
 font-style: normal;
 font-weight: bold;
-font-size: 2.25rem;
+font-size: 2rem;
 line-height: 49px;
 text-align: center;
 

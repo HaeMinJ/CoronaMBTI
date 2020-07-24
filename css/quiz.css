@@ -1,11 +1,18 @@
 h1{
-    position: absolute;
-    z-index: 3;
-    top: 8%;
-    padding-left: 41%;
-    font-size: 1.75rem;
-    color: white;
+    display: table;
+    position: relative;
+    margin: 5% auto;
+    clear: both;
+    z-index: 2;
+    
     font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 49px;
+    text-align: center;
+    
+    color: #FFFFFF;
 }
 #box{
     padding: 5%;
@@ -15,38 +22,31 @@ width: 60%;
 height: 70%;
 background-color: white;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-margin: 15% auto;
+margin: 5% auto;
 clear: both;
 z-index: 2;
 }
 
 #Q{
-    display: table;
-    position: relative;
-    bottom: 70%;
-    margin : 0% 100% 0% 0% auto;
-    clear: both;
-
+    z-index: 3;
+    display: inline-block;
+    position: relative; 
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 5% 7%;
     font-family: Noto Sans Malayalam UI;
-font-style: normal;
-font-weight: bold;
-font-size: 3em;
 
 color: #3A3042;
 
 }
 
 #question{
+    z-index: 3;
     display: table;
-    position: relative;
-    bottom: 70%;
-    margin : 0% 100% 0% 0% auto;
-    clear: both;
-
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2.3rem;
     font-family: Noto Sans Malayalam UI;
-font-style: normal;
-font-weight: bold;
-font-size: 2.4em;
 
 color: #29343F;
 }
