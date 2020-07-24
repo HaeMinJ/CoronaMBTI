@@ -135,3 +135,6 @@ button{
     font-size: 130%;
 }
 
+::placeholder{
+    font-size: 2vw;
+}
