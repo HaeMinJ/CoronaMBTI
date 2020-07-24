@@ -10,14 +10,28 @@
     <title>HOME_MBTI</title>
     <link rel="stylesheet" href="../css/background.css">
     <link rel="stylesheet" href="../css/home.css">
+    <script type="text/javascript">
+        var imgArray = new Array();
+        imgArray[0]="http://static-yojongdo.coronambti.com/images/quiz1.png";
+        imgArray[1]="http://static-yojongdo.coronambti.com/images/quiz2.png";
+        imgArray[2]="http://static-yojongdo.coronambti.com/images/quiz3.png";
+        imgArray[3]="http://static-yojongdo.coronambti.com/images/quiz4.png";
+
+        function showImage()
+        {
+            var imgNum=Math.round(Math.random()*3);
+            var objImg=document.getElementById("introImg");
+            objImg.src=imgArray[imgNum];
+        }
+    </script>
 </head>
-<body>
+<body onload="showImage()">
 <div>
     <img class="background" src="http://static-yojongdo.coronambti.com/images/background.svg" alt="배경">
     <h1>코로나 관련 상식 퀴즈</h1>
     <div class="textbox"> 
         <p class="title">코로나 상식 퀴즈</p>
-        <img id="emoticon" src="http://static-yojongdo.coronambti.com/images/quiz1.png" alt="이모티콘">
+        <img id="introImg">
         <p class="com">
             본 검사는 MBTI 유형 검사를 통해 코로나에 대응하는 본인의 자세를 알 수 있습니다.<br>
             검사를 마친 후 코로나 감염병에 대한 현 상황을 사용자들에게 환기시키고<br>
@@ -26,5 +40,7 @@
         <input type="button" class="btn_start" value="start!" onClick="location.href='../html/mbti_info.html'">
     </div>
 </div>
+
+
 </body>
 </html>
