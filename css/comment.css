@@ -1,0 +1,63 @@
+h1{
+    position: absolute;
+    z-index: 3;
+    top: 8%;
+    padding-left: 41%;
+    font-size: 1.75rem;
+    color: white;
+    font-family: Noto Sans Malayalam UI;
+}
+
+#rec{
+    z-index: 2;
+    display: table;
+    position: relative;
+    padding-top: 10%;
+    padding-left: 25%;
+}
+
+#rec > #ctitle1{
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    padding-left: 2%;  
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 54px;
+    font-family: Noto Sans Malayalam UI;
+}
+#rec > #ctitle2{
+    z-index: 3;
+    position: absolute;
+    top: 18%;
+    padding-left: 5%;
+    padding-right: 10%;
+    font-weight: bold;
+    font-size: 2.3rem;
+    line-height: 54px;
+    font-family: Noto Sans Malayalam UI;
+}
+
+#rec > #cox{
+    z-index: 3;
+    position: absolute;
+    top: 33%;
+    font-weight: bold;
+    padding-left: 4%;
+    font-size: 2.3rem;
+    line-height: 54px;
+    font-family: Noto Sans Malayalam UI;
+}
+
+#rec > #ccomment{
+    z-index: 3;
+    position: absolute;
+    top: 45%;
+    font-weight: bold;
+    padding-left: 4%;
+    font-size: 1.7rem;
+    line-height: 1em;
+    line-height: 1.7em;
+    font-family: Noto Sans Malayalam UI;
+    color: dimgrey;
+}
