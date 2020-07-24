@@ -1,0 +1,45 @@
+<!--
+  ~ Copyright (c) 2020. Team Yojongdo, All rights reserved
+  -->
+
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>코로나 정보 입력</title>
+      <link rel="stylesheet" href="../css/info.css">
+      <link rel="stylesheet" href="../css/background.css">
+  </head>
+  <body>
+  <div>
+        <div>
+            <img class="background" src="../assets/background.svg" alt="배경 사진">
+        </div>
+        <div id="box">
+            <span id="Q">Q</span>
+            <span id="question">성별과 나이를 입력해주세요</span>
+            <div id="genderbox">
+                <span class="gender">
+                    성별<span class="gender">|</span>
+                </span>
+                <span class="select">
+                    <input type="radio" name="gender" value="female">여
+                </span>
+                
+                <span class="select">
+                    <input type="radio" name="gender" value="male">남
+                </span>          
+            </div>
+            <div id="agebox">
+                <label for="ageinput">나이</label>|
+                <input type="text" id="ageinput" style="margin-left : 5%; height : 3vh;width: 40vw; border: none; background: transparent; padding: 1% 0% 1% 0%; text-align: center;" placeholder="나이를 입력하세요." >
+            </div>
+            <p id="bottom">
+                입력하신 정보는 mbti 유형 검사 결과 전달이 끝난 후 폐기됩니다.
+            </p>
+            <button onclick="">검사시작</button>
+        </div>
+  </div>
+  </body>
+  </html>
