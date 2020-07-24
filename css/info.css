@@ -1,13 +1,18 @@
-body{
+/*
+ * Copyright (c) 2020. Team Yojongdo, All rights reserved
+ */
+
+body {
     font-family: "Noto Sans Malayalam UI";
 }
 
-div{
+div {
     position: absolute;
     width: 100%;
-    
+
 }
-#background{
+
+#background {
     width: 100%;
     left: -3px;
     height: auto;
@@ -15,17 +20,17 @@ div{
     position: absolute;
 }
 
-h1{
+h1 {
     display: table;
     position: relative;
     z-index: 3;
     margin: 0 auto;
     padding-top: 4%;
-    font-size: 2rem;
+    font-size: 2vw;
     color: white;
 }
 
-#rec{
+#rec {
     z-index: 3;
     display: table;
     position: relative;
@@ -33,17 +38,18 @@ h1{
     padding-left: 25%;
 }
 
-#rec > #ctitle1{
+#rec > #ctitle1 {
     z-index: 3;
     position: absolute;
     top: 25%;
-    padding-left: 2%;  
+    padding-left: 2%;
     font-weight: bold;
     font-size: 3vw;
     line-height: 54px;
     font-family: Noto Sans Malayalam UI;
 }
-#rec > #ctitle2{
+
+#rec > #ctitle2 {
     z-index: 3;
     position: absolute;
     top: 21%;
@@ -55,7 +61,7 @@ h1{
     font-family: Noto Sans Malayalam UI;
 }
 
-#rec > #gender{
+#rec > #gender {
     z-index: 3;
     position: absolute;
     top: 40%;
@@ -63,7 +69,7 @@ h1{
     padding-right: 2%;
 }
 
-#rec > #age{
+#rec > #age {
     z-index: 3;
     position: absolute;
     top: 55%;
@@ -71,7 +77,7 @@ h1{
     padding-right: 2%;
 }
 
-#rec > #bottom{
+#rec > #bottom {
     z-index: 3;
     position: absolute;
     top: 75%;
@@ -80,7 +86,7 @@ h1{
     padding-right: 10%;
 }
 
-button{    
+button {
     z-index: 3;
     position: absolute;
     background: #749AAA;
@@ -93,7 +99,7 @@ button{
     padding-bottom: 0.7%;
 }
 
-#rex > #gender label{
+#rex > #gender label {
     position: absolute;
     top: 1px;
     left: 1px;
@@ -102,10 +108,17 @@ button{
     cursor: text;
 }
 
+<<<<<<< HEAD
 #age input[type="number"]{
     width: 30%;
     height: auto;
     line-height : normal;
+=======
+#gender input[type="number"] {
+    width: 40%;
+    height: auto;
+    line-height: normal;
+>>>>>>> d55c91726a2c06073ce66618c9ea838ec7ed3de8
     padding: .8vw .5vw;
     font-family: inherit;
     border: 1px solid #999;
