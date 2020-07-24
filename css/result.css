@@ -34,7 +34,7 @@ div {
     display: table;
     position: relative;
     bottom: 70%;
-    margin: 0 100% 0 0;
+    margin: 0 100% 0 0 auto;
     clear: both;
 
     font-family: Noto Sans Malayalam UI, serif;
@@ -52,7 +52,7 @@ div {
     display: table;
     position: relative;
     bottom: 70%;
-    margin: 0 100% 0 0;
+    margin: 0 100% 0 0 auto;
     clear: both;
 
     font-family: Noto Sans Malayalam UI, serif;
@@ -67,7 +67,7 @@ div {
     display: table;
     position: relative;
     bottom: 70%;
-    margin: 0 100% 0 0;
+    margin: 0 100% 0 0 auto;
     clear: both;
 
     font-family: Noto Sans Malayalam UI, serif;
@@ -86,13 +86,13 @@ p {
     display: table;
     position: relative;
     bottom: 70%;
-    margin: 0 100% 0 0;
+    margin: 0 100% 0 0 auto;
     clear: both;
 
     font-family: Noto Sans Malayalam UI, serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.2vw;
 
     color: #000000;
 }
