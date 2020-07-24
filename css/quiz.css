@@ -63,6 +63,7 @@ h1 {
     clear: both;
     width: 80%;
     height: 6.25vw;
+    cursor: pointer;
 
     background: #f1f1f1;
     font-size: 3vw;

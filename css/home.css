@@ -11,6 +11,7 @@
     width: 80%;
     height: 6.25vw;
     color: white;
+    cursor: pointer;
 
     background: #749AAA;
     font-size: 2vw;
@@ -55,6 +56,7 @@
     font-style: normal;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 4;
+    cursor: pointer;
 }
 
 .com {
@@ -84,4 +86,13 @@ h1 {
     text-align: center;
 
     color: #FFFFFF;
+}
+#emoticon{
+    padding: 5%;
+    display: table;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    margin: 5% auto;
+    clear: both;
 }
