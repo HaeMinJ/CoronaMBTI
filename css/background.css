@@ -8,7 +8,7 @@ div {
 
 }
 
-#background {
+.background {
     width: 100%;
     left: -3px;
     height: auto;
@@ -16,7 +16,7 @@ div {
     z-index: 1;
 }
 
-#textbox {
+.textbox {
     padding: 5%;
     display: table;
     position: relative;
@@ -30,7 +30,7 @@ div {
     z-index: 2;
 }
 
-#subtitle {
+.subtitle {
     display: table;
     position: relative;
     bottom: 80%;

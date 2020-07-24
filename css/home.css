@@ -2,7 +2,7 @@
  * Copyright (c) 2020. Team Yojongdo, All rights reserved
  */
 
-#btn {
+.btn {
     display: table;
     position: relative;
     bottom: 80%;
@@ -20,7 +20,7 @@
     z-index: 4;
 }
 
-#title {
+.title {
     display: table;
     position: relative;
     bottom: 80%;
@@ -39,7 +39,7 @@
     z-index: 3;
 }
 
-#btn_start {
+.btn_start {
     display: table;
     position: relative;
     bottom: 80%;
@@ -57,7 +57,7 @@
     z-index: 4;
 }
 
-#com {
+.com {
     text-align: center;
 
     font-family: Noto Sans Malayalam UI;

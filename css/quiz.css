@@ -55,7 +55,7 @@ h1 {
     color: #29343F;
 }
 
-#btn {
+.btn {
     display: table;
     position: relative;
     bottom: 80%;
