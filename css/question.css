@@ -70,7 +70,6 @@ h1 {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: 1%;
     position: relative;
-    z-index: 1;
 }
 
 .question {
@@ -82,9 +81,8 @@ h1 {
     background-color: white;
     z-index: 1;
     width: 70%;
-    height: 85vw;
+    height: auto;
     display: table;
-    margin-bottom: 5%;
 }
 
 .captionAgree {
@@ -109,11 +107,10 @@ h1 {
     font-family: "Noto Sans Malayalam UI";
     font-style: normal;
     font-weight: bold;
-    font-size: 1.7vw;
+    font-size: 2vw;
     color: #545454;
     text-align: center;
     position: relative;
-    margin-top: 4%;
 }
 
 .agreeMax {
@@ -126,6 +123,10 @@ h1 {
     float: left;
     position: relative;
 }
+.agreeMax:hover {
+    background-color: #749AAA;
+    transition-duration:.3s;
+}
 
 .agreeMed {
     width: 2vw;
@@ -136,8 +137,10 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
-    margin-left: 2vw;
-    margin-top: 0.5vw;
+}
+.agreeMed:hover {
+    background-color: #749AAA;
+    transition-duration:.3s;
 }
 
 .agreeMin {
@@ -149,8 +152,10 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
-    margin-left: 2vw;
-    margin-top: 1vw;
+}
+.agreeMin:hover {
+    background-color: #749AAA;
+    transition-duration:.3s;
 }
 
 .neutral {
@@ -162,8 +167,10 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
-    margin-left: 2vw;
-    margin-top: 1.5vw;
+}
+.neutral:hover {
+    background-color: #A9A9A9;
+    transition-duration:.3s;
 }
 
 .disagreeMax {
@@ -175,8 +182,13 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
-    margin-left: 2vw;
 }
+
+.disagreeMax:hover {
+    background-color: #3A3042;
+    transition-duration:.3s;
+}
+
 
 .disagreeMed {
     width: 2vw;
@@ -187,8 +199,11 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
-    margin-left: 2vw;
-    margin-top: 0.5vw;
+}
+
+.disagreeMed:hover {
+    background-color: #3A3042;
+    transition-duration:.3s;
 }
 
 .disagreeMin {
@@ -200,8 +215,11 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
-    margin-left: 2vw;
-    margin-top: 1vw;
+}
+
+.disagreeMin:hover {
+    background-color: #3A3042;
+    transition-duration:.3s;
 }
 
 .options {
@@ -220,26 +238,11 @@ hr {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1vw;
     text-align: center;
     color: #FFFFFF;
     background-color: #749AAA;
     width: 25%;
-    height: 3vw;
+    height: 33%;
     padding-top: 1.6%;
-    position: relative;
-    margin-left: 37%;
-    margin-top: 5%;
-}
-
-.decision {
-  position: relative;
-  float: left;
-  margin-left: 22%;
-  margin-bottom: 2%;
-}
-
-.options {
-  position: relative;
-  float: left;
 }
