@@ -55,6 +55,9 @@ h1 {
     color: #29343F;
 }
 
+.btn:hover{
+    background-color: #C4C4C4;
+}
 .btn {
     display: table;
     position: relative;
