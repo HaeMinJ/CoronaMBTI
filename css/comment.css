@@ -1,63 +1,81 @@
+body{
+    font-family: "Noto Sans Malayalam UI";
+}
+
 h1{
-    position: absolute;
-    z-index: 3;
-    top: 8%;
-    padding-left: 41%;
-    font-size: 1.75rem;
+    display: table;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding-top: 4%;
+    font-size: 2rem;
     color: white;
-    font-family: Noto Sans Malayalam UI;
+    
 }
 
 #rec{
     z-index: 2;
     display: table;
     position: relative;
-    padding-top: 10%;
-    padding-left: 25%;
+    width: 60%;
+    height: 70%;
+    margin: 5% 20%;
+    padding-bottom: 5%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    clear: both;
+    color: #29343F;
 }
 
-#rec > #ctitle1{
+#ctitle1{
     z-index: 3;
-    position: absolute;
-    top: 20%;
-    padding-left: 2%;  
+    display: inline-block;
+    position: relative; 
     font-weight: bold;
     font-size: 3rem;
-    line-height: 54px;
+    padding: 2% 6%;
     font-family: Noto Sans Malayalam UI;
 }
-#rec > #ctitle2{
+#ctitle2{
     z-index: 3;
-    position: absolute;
-    top: 18%;
-    padding-left: 5%;
-    padding-right: 10%;
+    display: table;
+    display: inline-block;
     font-weight: bold;
     font-size: 2.3rem;
-    line-height: 54px;
     font-family: Noto Sans Malayalam UI;
 }
 
-#rec > #cox{
+#cox{
     z-index: 3;
-    position: absolute;
-    top: 33%;
+    display: table;
+    position: relative;
     font-weight: bold;
-    padding-left: 4%;
-    font-size: 2.3rem;
-    line-height: 54px;
+    padding-left: 16%;
+    font-size: 2rem;
     font-family: Noto Sans Malayalam UI;
 }
 
-#rec > #ccomment{
+#ccomment{
     z-index: 3;
-    position: absolute;
-    top: 45%;
-    font-weight: bold;
-    padding-left: 4%;
-    font-size: 1.7rem;
-    line-height: 1em;
+    display: table;
+    position: relative;
+    padding-left: 16%;
+    padding-top: 2%;
+    font-size: 1.5rem;
+    font-weight: bolder;
     line-height: 1.7em;
     font-family: Noto Sans Malayalam UI;
     color: dimgrey;
 }
+
+button{
+    margin-left: 41%;
+    margin-top: 2%;
+    padding: 2% 4%;
+    background: #5D7794;
+    border-radius: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
