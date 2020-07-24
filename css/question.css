@@ -43,7 +43,7 @@ h1 {
     margin-left: 15%;
     margin-top: 1%;
   }
-  
+
   .progress {
       position: relative;
       font-family: "roboto";
@@ -54,7 +54,7 @@ h1 {
       display: block;
       float: left;
   }
-  
+
   .progressBarBackground {
       position: relative;
       width: 75%;
@@ -78,7 +78,7 @@ h1 {
     background-color: white;
     z-index: 1;
     width: 70%;
-    height: 85vw;
+    height: 95vw;
     display: table;
     margin-bottom: 5%;
 }
@@ -89,7 +89,10 @@ h1 {
     color: #749AAA;
     font-size: 1.2vw;
     font-weight: 800;
+    display: block;
     float: left;
+    margin-top: 2%;
+    margin-right: 2%;
 }
 
 .captionDisagree {
@@ -98,7 +101,10 @@ h1 {
     color: #3A3042;
     font-size: 1.2vw;
     font-weight: 800;
+    display: block;
     float: left;
+    margin-top: 2%;
+    margin-left: 0%;
 }
 
 .statement {
@@ -205,6 +211,8 @@ h1 {
     position: relative;
     margin-left: 1%;
     margin-right: 1%;
+    width: 60%;
+    height: 10%;
 }
 
 hr {
@@ -233,7 +241,10 @@ hr {
   position: relative;
   float: left;
   margin-left: 22%;
-  margin-bottom: 2%;
+  margin-bottom: 0%;
+  width: 80%;
+  height: 10%;
+  margin-top: 3%;
 }
 
 .options {
