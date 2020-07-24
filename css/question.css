@@ -180,6 +180,15 @@
 .options .neutral:hover{
     background-color:#A9A9A9;
 }
+.radio.agree.selected{
+    background-color:#749AAA;
+}
+.neutral.selected{
+    background-color:#A9A9A9;
+}
+.radio.disagree.selected{
+    background-color:#3A3042;
+}
 .disagreeMax {
     width: 3vw;
     height: 3vw;
