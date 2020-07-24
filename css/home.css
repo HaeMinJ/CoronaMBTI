@@ -88,17 +88,8 @@ h1 {
 #emoticon {
     display: table;
     position: relative;
-    width: 40%;
-    height: 30%;
-    clear: both;
-    padding: 5%;
-    margin: 5% auto;
-}
-#introImg{
-    display: table;
-    position: relative;
-    width: 30%;
-    height: 30%;
+    width: 250px;
+    height: 250px;
     clear: both;
     padding: 5%;
     margin: 5% auto;
