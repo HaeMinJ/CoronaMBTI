@@ -13,7 +13,7 @@ h1 {
 }
 
 #margin_progress {
-  margin-left: 17%;
+  margin-left: 15%;
 }
 
 .box {
@@ -23,7 +23,7 @@ h1 {
   width: 20%;
   height: 15%;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: white;
   margin: 1%;
   padding-left: 1%;
@@ -46,9 +46,11 @@ h1 {
 
 .progressBar {
   float: left;
-  position: relative;
-  width: 50%;
-  height: 10%;
-  background-color: rgba(234, 234, 234, 1);
+  position: absolute;
+  width: 60%;
+  height: 5%;
+  background-color: rgba(195, 195, 195, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 18%;
+  z-index: 2;
 }
