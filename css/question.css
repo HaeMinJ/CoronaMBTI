@@ -34,7 +34,7 @@ h1 {
 }
 
 .progress {
-  margin-top: auto;
+  margin-top: 2%;
   float: left;
   position: relative;
   font-family: "roboto";
@@ -46,13 +46,167 @@ h1 {
   z-index: 1;
 }
 
-.progressBar {
+.progressBarBackground {
   float: left;
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 4%;
   background-color: rgba(195, 195, 195, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-left: 1%;
   z-index: 1;
+}
+
+.progressBar {
+  margin-top: 2%;
+  float: left;
+  width: 50%;
+  height: 4%;
+  background-color: rgba(195, 195, 195, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 1%;
+  position: relative;
+}
+
+.question {
+  position: relative;
+  margin-left: 15%;
+  margin-top: 3%;
+  padding-top: 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  z-index: 1;
+  width: 70%;
+  height: auto;
+  display: table;
+}
+
+.captionAgree{
+  font-family: "Noto Sans Malayalam UI";
+  position: relative;
+  color: #749AAA;
+  font-size: 1.2em;
+  font-weight: 800;
+  float: left;
+}
+
+.captionDisagree{
+  font-family: "Noto Sans Malayalam UI";
+  position: relative;
+  color: color: #3A3042;
+  font-size: 1.2em;
+  font-weight: 800;
+  float: left;
+}
+
+.statement {
+  font-family: "Noto Sans Malayalam UI";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  color: #545454;
+  text-align: center;
+  position: relative;
+}
+
+.agreeMax {
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  border: 0.2em solid #749AAA;
+  border-radius: 50%;
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.agreeMed {
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  border: 0.2em solid #749AAA;
+  border-radius: 50%;
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.agreeMin {
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border: 0.2em solid #749AAA;
+  border-radius: 50%;
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.neutral {
+  width: 0.2em;
+  height: 0.2em;
+  background-color: white;
+  border : 0.2em solid #A9A9A9;
+  border-radius: 50%;
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.disagreeMax {
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  border: 0.2em solid #3A3042;
+  border-radius: 50%;
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.disagreeMed {
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  border: 0.2em solid #3A3042;
+  border-radius: 50%;
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.disagreeMin {
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border: 0.2em solid #3A3042;
+  border-radius: 50%;
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.options {
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+hr {
+  width: 70%;
+  text-align: center;
+}
+
+.nextButton {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #749AAA;
+  width: 25%;
+  height: 33%;
+  padding-top: 1.6%;
 }
