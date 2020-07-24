@@ -20,23 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b892608-2c68-4520-8103-0512f185865c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/comment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/question.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/question.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/quiz.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/result.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/HOME_MBTI.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/HOME_MBTI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/HOME_Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/HOME_Quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/commentary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/mbit_info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/mbti_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mbti_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/mbti_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mbti_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quiz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/quiz_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quiz_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +37,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -75,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595592918409</updated>
-      <workItem from="1595592920502" duration="2942000" />
+      <workItem from="1595592920502" duration="3614000" />
     </task>
     <servers />
   </component>
