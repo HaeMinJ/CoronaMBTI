@@ -11,13 +11,7 @@
     <title>question</title>
     <link rel="stylesheet" href="../css/background.css">
     <link rel="stylesheet" href="../css/question.css"/>
-    <style>
-        #svg{
-            
-        }
-    </style>
 </head>
-
 <body>
 <div>
     <img alt="배경 사진" class="background" src="../assets/background.svg">
@@ -28,9 +22,9 @@
     <div class="box">분위기에 휩쓸리지 않고<br>정직하게 답변하세요.</div>
     <div class="box">중립적인 선택은<br>되도록 피해주세요.</div>
 
-    <svg height="10" width="300">  
-        <line x1="0" y1="1" x2="30" y2="1" stroke="black" />
-    </svg>
+    <div class="progress" id="margin_progress">0%</div>
+    <div class="progressBarBackground"><span class="progressBar"></span></div>
+    <div class="progress">100%</div>
 
     <div class="question">
         <div class="statement">
