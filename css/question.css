@@ -2,7 +2,7 @@
  * Copyright (c) 2020. Team Yojongdo, All rights reserved
  */
 
-h1 {
+ h1 {
     font-family: "Noto Sans Malayalam UI";
     font-weight: bold;
     color: white;
@@ -68,19 +68,6 @@ h1 {
       margin-right: 2%;
   }
 
-<<<<<<< HEAD
-=======
-.progressBar {
-    margin-top: 2%;
-    float: left;
-    width: 50%;
-    height: 4%;
-    background-color: rgba(195, 195, 195, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 1%;
-    position: relative;
-}
->>>>>>> 6f67823928237e2c7826df793cece12eb1a2a804
 
 .question {
     position: relative;
@@ -91,12 +78,9 @@ h1 {
     background-color: white;
     z-index: 1;
     width: 70%;
-<<<<<<< HEAD
     height: 95vw;
-=======
-    height: auto;
->>>>>>> 6f67823928237e2c7826df793cece12eb1a2a804
     display: table;
+    margin-bottom: 5%;
 }
 
 .captionAgree {
@@ -127,10 +111,11 @@ h1 {
     font-family: "Noto Sans Malayalam UI";
     font-style: normal;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.7vw;
     color: #545454;
     text-align: center;
     position: relative;
+    margin-top: 4%;
 }
 
 .agreeMax {
@@ -143,11 +128,9 @@ h1 {
     float: left;
     position: relative;
 }
-.agreeMax:hover {
-    background-color: #749AAA;
-    transition-duration:.3s;
+.options .agreeMax:hover{
+    background-color:#749AAA;
 }
-
 .agreeMed {
     width: 2vw;
     height: 2vw;
@@ -157,12 +140,12 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
 }
-.agreeMed:hover {
-    background-color: #749AAA;
-    transition-duration:.3s;
+.options .agreeMed:hover{
+    background-color:#749AAA;
 }
-
 .agreeMin {
     width: 1vw;
     height: 1vw;
@@ -172,12 +155,12 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
+    margin-left: 2vw;
+    margin-top: 1vw;
 }
-.agreeMin:hover {
-    background-color: #749AAA;
-    transition-duration:.3s;
+.options .agreeMin:hover{
+    background-color:#749AAA;
 }
-
 .neutral {
     width: 0.2vw;
     height: 0.2vw;
@@ -187,12 +170,12 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
+    margin-left: 2vw;
+    margin-top: 1.5vw;
 }
-.neutral:hover {
-    background-color: #A9A9A9;
-    transition-duration:.3s;
+.options .neutral:hover{
+    background-color:#A9A9A9;
 }
-
 .disagreeMax {
     width: 3vw;
     height: 3vw;
@@ -202,14 +185,11 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
+    margin-left: 2vw;
 }
-
-.disagreeMax:hover {
-    background-color: #3A3042;
-    transition-duration:.3s;
+.options .disagreeMax:hover{
+    background-color:#3A3042;
 }
-
-
 .disagreeMed {
     width: 2vw;
     height: 2vw;
@@ -219,13 +199,12 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
 }
-
-.disagreeMed:hover {
-    background-color: #3A3042;
-    transition-duration:.3s;
+.options .disagreeMed:hover{
+    background-color:#3A3042;
 }
-
 .disagreeMin {
     width: 1vw;
     height: 1vw;
@@ -235,13 +214,12 @@ h1 {
     padding: 1%;
     float: left;
     position: relative;
+    margin-left: 2vw;
+    margin-top: 1vw;
 }
-
-.disagreeMin:hover {
-    background-color: #3A3042;
-    transition-duration:.3s;
+.options .disagreeMin:hover{
+    background-color:#3A3042;
 }
-
 .options {
     float: left;
     position: relative;
@@ -250,7 +228,9 @@ h1 {
     width: 60%;
     height: 10%;
 }
-
+.options div{
+    transition: 0.3s;
+}
 hr {
     width: 70%;
     text-align: center;
@@ -260,12 +240,11 @@ hr {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-align: center;
     color: #FFFFFF;
     background-color: #749AAA;
     width: 25%;
-<<<<<<< HEAD
     height: 3vw;
     padding-top: 1%;
     padding-bottom: 1.3%;
@@ -287,10 +266,6 @@ hr {
 .options {
   position: relative;
   float: left;
-=======
-    height: 33%;
-    padding-top: 1.6%;
->>>>>>> 6f67823928237e2c7826df793cece12eb1a2a804
 }
 .nextButton span {
     font-size: 30px;
