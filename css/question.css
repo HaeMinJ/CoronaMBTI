@@ -37,6 +37,19 @@
     z-index: 1;
 }
 
+
+#pg {
+  width: 70%;
+  height: 0.5rem;
+  margin-top: 15%;
+  margin-bottom: 1%;
+  margin-left: 15%;
+  display: table;
+  clear: both;
+  position: relative;
+  z-index: 2;
+}
+
 .parent {
     width: 80%;
     height: 20%;
