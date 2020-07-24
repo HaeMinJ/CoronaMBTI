@@ -1,79 +1,87 @@
-#btn{
+/*
+ * Copyright (c) 2020. Team Yojongdo, All rights reserved
+ */
+
+#btn {
     display: table;
     position: relative;
     bottom: 80%;
-    margin : 0% auto;
+    margin: 0% auto;
     clear: both;
     width: 80%;
-    height: 6.25rem;
+    height: 6.25vw;
     color: white;
 
-background: #749AAA;
-font-size: 2rem;
-font-family: Noto Sans Malayalam UI;
-font-style: normal;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-z-index: 4;
+    background: #749AAA;
+    font-size: 2vw;
+    font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
 }
-#title{
+
+#title {
     display: table;
     position: relative;
     bottom: 80%;
-    margin : 0% auto;
+    margin: 0% auto;
     clear: both;
-    
-font-family: Noto Sans Malayalam UI;
-font-style: normal;
-font-weight: bold;
-font-size: 3.5rem;
-line-height: 75px;
 
-/* identical to box height */
+    font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5vw;
+    line-height: 75px;
 
-color: black;
-z-index:3;
+    /* identical to box height */
+
+    color: black;
+    z-index: 3;
 }
-#btn_start{
+
+#btn_start {
     display: table;
     position: relative;
     bottom: 80%;
-    margin : 0% auto;
+    margin: 0% auto;
     clear: both;
     width: 25%;
-    height: 4.6rem;
+    height: 4.6vw;
     color: white;
 
-background: #749AAA;
-font-size: 2.2rem;
-font-family: Noto Sans Malayalam UI;
-font-style: normal;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-z-index: 4;
+    background: #749AAA;
+    font-size: 2.2vw;
+    font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
 }
-#com{
+
+#com {
     text-align: center;
 
     font-family: Noto Sans Malayalam UI;
-font-style: normal;
-font-weight: 500;
-font-size: 1.25rem;
-line-height: 27px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 27px;
 
-color: #000000;
+    color: #000000;
 }
-h1{
-display: table;
-position: relative;
-margin: 5% auto;
-clear: both;
-z-index: 2;
 
-font-family: Noto Sans Malayalam UI;
-font-style: normal;
-font-weight: bold;
-font-size: 2rem;
-line-height: 49px;
-text-align: center;
+h1 {
+    display: table;
+    position: relative;
+    margin: 5% auto;
+    clear: both;
+    z-index: 2;
 
-color: #FFFFFF;
+    font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 49px;
+    text-align: center;
+
+    color: #FFFFFF;
 }

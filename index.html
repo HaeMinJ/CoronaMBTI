@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-    <div>
-    <img id="background" src="../assets/background.svg">
-    <div id="textbox">
-    <p id="subtitle">전지적 코로나 시점</p>
-    <br><br><br><br><br>
-    <input type="button" id="btn" value="코로나 MBTI 검사하러 가기" onClick="location.href='../html/HOME_MBTI.html'">
-    <br><br><br><br>
-    <input type="button" id="btn" value="코로나 퀴즈 풀러 가기" onClick="location.href='../html/HOME_Quiz.html'">
-</div>
+<div>
+    <img id="background" src="./assets/background.svg">
+    <div id="textbox"> <!-- To-do : 이것도 클래스로 바꾸기 -->
+        <p id="subtitle">전지적 코로나 시점</p>
+        <br><br><br><br><br> <!-- To-Do : br 태그 전부 margin 으로 바꾸기. -->
+        <input type="button" id="btn" value="코로나 MBTI 검사하러 가기" onClick="location.href='./html/HOME_MBTI.html'">
+        <br><br><br><br> <!-- To-Do : id 는 중복 되면 안됨 클래스로 변경해서 사용하는 것이 좋아보임. -->
+        <input type="button" id="btn" value="코로나 퀴즈 풀러 가기" onClick="location.href='./html/HOME_Quiz.html'">
+    </div>
 </div>
 </body>
 </html>
