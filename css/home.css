@@ -7,6 +7,7 @@
     width: 80%;
     height: 6.25rem;
     color: white;
+    cursor: pointer;
 
 background: #749AAA;
 font-size: 2rem;
@@ -43,12 +44,22 @@ z-index:3;
     height: 4.6rem;
     color: white;
 
+<<<<<<< HEAD
+    background: #749AAA;
+    font-size: 2.2vw;
+    font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+    cursor: pointer;
+=======
 background: #749AAA;
 font-size: 2.2rem;
 font-family: Noto Sans Malayalam UI;
 font-style: normal;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 z-index: 4;
+>>>>>>> 63097230f96dfd88565b998892cfa3f1272f4a74
 }
 #com{
     text-align: center;
@@ -75,5 +86,18 @@ font-size: 2rem;
 line-height: 49px;
 text-align: center;
 
+<<<<<<< HEAD
+    color: #FFFFFF;
+}
+#emoticon{
+    padding: 5%;
+    display: table;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    margin: 5% auto;
+    clear: both;
+=======
 color: #FFFFFF;
+>>>>>>> 63097230f96dfd88565b998892cfa3f1272f4a74
 }

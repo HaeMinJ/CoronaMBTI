@@ -58,8 +58,13 @@ color: #29343F;
     margin : 0% auto;
     clear: both;
     width: 80%;
+<<<<<<< HEAD
+    height: 6.25vw;
+    cursor: pointer;
+=======
     height: 6.25rem;
     color: white;
+>>>>>>> 63097230f96dfd88565b998892cfa3f1272f4a74
 
 background: #f1f1f1;
 font-size: 3rem;
