@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b892608-2c68-4520-8103-0512f185865c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/comment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/question.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/question.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/result.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/HOME_MBTI.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/HOME_MBTI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/HOME_Quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/HOME_Quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/commentary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/mbit_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/mbti_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mbti_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/mbti_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mbti_result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/quiz_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quiz_result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1f8HhTIzbAXeKOELpFX28lwoohm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b892608-2c68-4520-8103-0512f185865c" name="Default Changelist" comment="" />
+      <created>1595592918409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595592918409</updated>
+      <workItem from="1595592920502" duration="2942000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595593679659">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1595593679659" />
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595593864906">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1595593864906" />
+    <state x="341" y="175" key="SettingsEditor" timestamp="1595595453548">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1595595453548" />
+    <state x="541" y="169" width="598" height="735" key="find.popup" timestamp="1595595821116">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="541" y="169" width="598" height="735" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1595595821116" />
+  </component>
+</project>

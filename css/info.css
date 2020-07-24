@@ -1,13 +1,18 @@
-body{
+/*
+ * Copyright (c) 2020. Team Yojongdo, All rights reserved
+ */
+
+body {
     font-family: "Noto Sans Malayalam UI";
 }
 
-div{
+div {
     position: absolute;
     width: 100%;
-    
+
 }
-#background{
+
+#background {
     width: 100%;
     left: -3px;
     height: auto;
@@ -15,17 +20,17 @@ div{
     position: absolute;
 }
 
-h1{
+h1 {
     display: table;
     position: relative;
     z-index: 3;
     margin: 0 auto;
     padding-top: 4%;
-    font-size: 2rem;
+    font-size: 2vw;
     color: white;
 }
 
-#rec{
+#rec {
     z-index: 3;
     display: table;
     position: relative;
@@ -33,29 +38,30 @@ h1{
     padding-left: 25%;
 }
 
-#rec > #ctitle1{
+#rec > #ctitle1 {
     z-index: 3;
     position: absolute;
     top: 25%;
-    padding-left: 2%;  
+    padding-left: 2%;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3vw;
     line-height: 54px;
     font-family: Noto Sans Malayalam UI;
 }
-#rec > #ctitle2{
+
+#rec > #ctitle2 {
     z-index: 3;
     position: absolute;
     top: 21%;
     padding-left: 6%;
     padding-right: 10%;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2.3vw;
     line-height: 54px;
     font-family: Noto Sans Malayalam UI;
 }
 
-#rec > #gender{
+#rec > #gender {
     z-index: 3;
     position: absolute;
     top: 40%;
@@ -63,7 +69,7 @@ h1{
     padding-right: 2%;
 }
 
-#rec > #age{
+#rec > #age {
     z-index: 3;
     position: absolute;
     top: 55%;
@@ -71,41 +77,41 @@ h1{
     padding-right: 2%;
 }
 
-#rec > #bottom{
+#rec > #bottom {
     z-index: 3;
     position: absolute;
     top: 75%;
-    font-size: 1.0rem;
+    font-size: 1.0vw;
     padding-left: 2%;
     padding-right: 10%;
 }
 
-button{    
+button {
     z-index: 3;
     background: #749AAA;
     top: 5%;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.8vw;
     padding-right: 2%;
     padding-left: 2%;
     padding-top: 0.7%;
     padding-bottom: 0.7%;
 }
 
-#rex > #gender label{
+#rex > #gender label {
     position: absolute;
     top: 1px;
     left: 1px;
-    padding: .4rem .3rem;
+    padding: .4vw .3vw;
     color: black;
     cursor: text;
 }
 
-#gender input[type="number"]{
+#gender input[type="number"] {
     width: 40%;
     height: auto;
-    line-height : normal;
-    padding: .8em .5em;
+    line-height: normal;
+    padding: .8vw .5vw;
     font-family: inherit;
     border: 1px solid #999;
     border-radius: 0;

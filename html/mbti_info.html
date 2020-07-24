@@ -1,17 +1,42 @@
+<!--
+  ~ Copyright (c) 2020. Team Yojongdo, All rights reserved
+  -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>HOME</title>
-    <link rel="stylesheet" href="../css/background.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 검사 시작하기</title>
+    <link rel="stylesheet" href="../css/info.css">
 </head>
 <body>
-    <div>
-        <img id="background" src="../assets/background.svg">
-        <div id="textbox">
-            <p id="subtitile">Q 성별과 나이를 입력해주세요</p>
-        </div>
+<div>
+    <img id="background" src="../assets/back.svg" alt="배경 사진">
+</div>
+<h1>
+    코로나 관련 성격 유형 검사
+</h1>
+<div id="rec">
+    <img src="../assets/rec15.svg" alt="배경 사진">
+    <div id="ctitle1">
+        Q
     </div>
+    <p id="ctitle2">
+        성별과 나이를 입력해주세요
+    </p>
+    <div id="gender">
+        <img src="../img/그림01.jpg" width="750" height="90" alt=""> <!-- To-do: 그림 크기랑 요소 크기가 비율이 맞는지 확인 해야함, alt 태그 작성 하기 -->
+        <label for="ex_input">나이 | </label>
+        <input type="number" id="ex_input">
+    </div>
+    <div id="age">
+        <img src="../img/그림01.jpg" width="750" height="90" alt=""> <!-- To-do: 그림 크기랑 요소 크기가 비율이 맞는지 확인 해야함, alt 태그 작성 하기 -->
+    </div>
+    <p id="bottom">
+        입력하신 정보는 mbti 유형 검사 결과 전달이 끝난 후 폐기됩니다.
+    </p>
+    <button onclick="">검사시작</button>
+</div>
 </body>
 </html>
