@@ -1,0 +1,7 @@
+[
+    {"id": 0, "statement": "마스크 챙기는 것을 잘 까먹는다.", "type" : 3, "status": 0},
+    {"id": 1, "statement": "나는 코로나에 대응하려고 마스크를 사두려고 노력했다.", "type" : 3, "status" : 0},
+    {"id": 2, "statement": "코로나에 대비해서 비상물품을 잔뜩 사두었다.", "type" :3, "status" : 0},
+    {"id": 3, "statement": "코로나 예방을 위해 노력한 적이 있다.", "type" : 3 , "status" : 0},
+    {"id": 4, "statement": "밖에 나갔다 오면 코로나 예방을 위해 손세정제로 꼼꼼하게 씻는다.", "type" : 3 , "status" : 0}
+]
