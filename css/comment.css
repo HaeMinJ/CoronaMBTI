@@ -1,19 +1,16 @@
-/*
- * Copyright (c) 2020. Team Yojongdo, All rights reserved
- */
-
 body{
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 }
 
 h1{
     display: table;
     position: relative;
+    z-index: 2;
     margin: 0 auto;
     padding-top: 3%;
-    font-size: 2.5vw;
+    font-size: 2.5rem;
     color: white;
-    z-index: 2;
+    
 }
 #background{
     width: 100%;
@@ -30,7 +27,7 @@ h1{
     margin: 5% 20%;
     padding: 4%;
     background-color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     clear: both;
     color: #29343F;
     z-index: 2;
@@ -41,19 +38,18 @@ h1{
     display: inline;
     position: relative; 
     font-weight: bold;
-    font-size: 3vw;
-    padding: 1% 1% 5% 0;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-size: 3rem;
+    padding: 1% 1% 5% 0%;
+    font-family: Noto Sans Malayalam UI;
 }
 #ctitle2{
     z-index: 3;
-    display: inline-block;
+    display: inline;
     position: relative;
     font-weight: bold;
-    font-size: 2.3vw;
+    font-size: 2.3rem;
     padding-left: 2%;
-    padding-right: 2%;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 }
 
 #cox{
@@ -63,10 +59,9 @@ h1{
     font-weight: bold;
     padding-top: 4%;
     padding-left: 10%;
-    padding-right: 10%;
-    line-height: 0.5vw;
-    font-size: 2vw;
-    font-family: Noto Sans Malayalam UI, serif;
+    line-height: 0.5em;
+    font-size: 2rem;
+    font-family: Noto Sans Malayalam UI;
 }
 
 #ccomment{
@@ -74,25 +69,21 @@ h1{
     display: table;
     position: relative;
     padding-left: 10%;
-    padding-right: 10%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-weight: bolder;
-    line-height: 1.7vw;
-    font-family: Noto Sans Malayalam UI, serif;
+    line-height: 1.7em;
+    font-family: Noto Sans Malayalam UI;
     color: dimgrey;
 }
 
 button{
-    display: table;
-    position: relative;
-    margin : 4% auto;
-    width: 20%;
-    height: 15%;
+    margin: 0 38%;
+    margin-top: 4%;
+    padding: 2% 4%;
     background: #5D7794;
     border-radius: 5%;
     color: white;
     font-weight: bold;
-    font-size: 1.5vw;
-    clear: both;
+    font-size: 1.5em;
 }
 
