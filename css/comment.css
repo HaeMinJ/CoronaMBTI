@@ -1,5 +1,5 @@
 body{
-    font-family: "Noto Sans Malayalam UI";
+    font-family: Noto Sans Malayalam UI;
 }
 
 h1{
@@ -7,41 +7,48 @@ h1{
     position: relative;
     z-index: 2;
     margin: 0 auto;
-    padding-top: 4%;
-    font-size: 2rem;
+    padding-top: 3%;
+    font-size: 2.5rem;
     color: white;
     
 }
-
+#background{
+    width: 100%;
+    left: -3px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
 #rec{
-    z-index: 2;
     display: table;
     position: relative;
-    width: 60%;
+    width: 50%;
     height: 70%;
     margin: 5% 20%;
-    padding-bottom: 5%;
+    padding: 4%;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     clear: both;
     color: #29343F;
+    z-index: 2;
 }
 
 #ctitle1{
     z-index: 3;
-    display: inline-block;
+    display: inline;
     position: relative; 
     font-weight: bold;
     font-size: 3rem;
-    padding: 2% 6%;
+    padding: 1% 1% 5% 0%;
     font-family: Noto Sans Malayalam UI;
 }
 #ctitle2{
     z-index: 3;
-    display: table;
-    display: inline-block;
+    display: inline;
+    position: relative;
     font-weight: bold;
     font-size: 2.3rem;
+    padding-left: 2%;
     font-family: Noto Sans Malayalam UI;
 }
 
@@ -50,7 +57,9 @@ h1{
     display: table;
     position: relative;
     font-weight: bold;
-    padding-left: 16%;
+    padding-top: 4%;
+    padding-left: 10%;
+    line-height: 0.5em;
     font-size: 2rem;
     font-family: Noto Sans Malayalam UI;
 }
@@ -59,8 +68,7 @@ h1{
     z-index: 3;
     display: table;
     position: relative;
-    padding-left: 16%;
-    padding-top: 2%;
+    padding-left: 10%;
     font-size: 1.5rem;
     font-weight: bolder;
     line-height: 1.7em;
@@ -69,8 +77,8 @@ h1{
 }
 
 button{
-    margin-left: 41%;
-    margin-top: 2%;
+    margin: 0 38%;
+    margin-top: 4%;
     padding: 2% 4%;
     background: #5D7794;
     border-radius: 5%;
