@@ -1,0 +1,7 @@
+[
+    {"id": 0, "statement": "나는 항상 코로나에 걸릴 것 같은 불안함을 가지고", "type" : 1, "status": 0},
+    {"id": 1, "statement": "코로나의 위험성을 잘 알고있다.", "type" : 1 , "status" : 0},
+    {"id": 2, "statement": "현재 사회적 거리두기 몇단계인지 알고있다.", "type" : 1 , "status" : 0},
+    {"id": 3, "statement": "코로나 확진자 수를 눈여겨 본다.", "type" : 1 , "status" : 0},
+    {"id": 4, "statement": "코로나 초기 증상에 대해서 잘 알고있다.", "type" : 1 , "status" : 0}
+]
