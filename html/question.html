@@ -11,6 +11,7 @@
     <title>question</title>
     <link rel="stylesheet" href="../css/background.css">
     <link rel="stylesheet" href="../css/question.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
 <div>
@@ -18,110 +19,60 @@
 </div>
 <br/>
 <h1>코로나 관련 성격 유형 검사</h1>
-    <div class="box" id="margin_Box">총 검사시간은<br>20분 이내입니다.</div>
-    <div class="box">분위기에 휩쓸리지 않고<br>정직하게 답변하세요.</div>
-    <div class="box">중립적인 선택은<br>되도록 피해주세요.</div>
+<div class="box" id="margin_Box">총 검사시간은<br>20분 이내입니다.</div>
+<div class="box">분위기에 휩쓸리지 않고<br>정직하게 답변하세요.</div>
+<div class="box">중립적인 선택은<br>되도록 피해주세요.</div>
 
-    <div class="parent">
-        <span class="progress">0%</span><div class="progressBarBackground"></div><span class="progress">100%</span>
-      </div>
+<div class="parent">
+    <span class="progress">0%</span>
+    <div class="progressBarBackground"></div>
+    <span class="progress">100%</span>
+</div>
 
-    <svg height="10" width="300">
-        <line x1="0" y1="1" x2="30" y2="1" stroke="black" />
-    </svg>
+<svg height="10" width="300">
+    <line x1="0" y1="1" x2="30" y2="1" stroke="black"/>
+</svg>
 
-    <div class="question">
-        <div class="statement">
-            <!--질문멘트-->현재 사회적 거리두기 몇 단계인지 알고있다.
-        </div>
-        <div class="decision">
-            <span class="captionAgree">동의</span>
-            <div class="options">
-                <div class="agreeMax"><span class="check"></span></div>
-                <div class="agreeMed"><span class="check"></span></div>
-                <div class="agreeMin"><span class="check"></span></div>
-                <div class="neutral"><span class="check"></span></div>
-                <div class="disagreeMin"><span class="check"></span></div>
-                <div class="disagreeMed"><span class="check"></span></div>
-                <div class="disagreeMax"><span class="check"></span></div>
-            </div>
-            <span class="captionDisagree">비동의</span>
-        </div>
-        <hr/>
-
-        <div class="statement">
-            <!--질문멘트-->코로나 관련 기부를 하고 싶다.
-        </div>
-        <div class="decision">
-            <span class="captionAgree">동의</span>
-            <div class="options">
-                <div class="agreeMax"><span class="check"></span></div>
-                <div class="agreeMed"><span class="check"></span></div>
-                <div class="agreeMin"><span class="check"></span></div>
-                <div class="neutral"><span class="check"></span></div>
-                <div class="disagreeMin"><span class="check"></span></div>
-                <div class="disagreeMed"><span class="check"></span></div>
-                <div class="disagreeMax"><span class="check"></span></div>
-            </div>
-            <span class="captionDisagree">비동의</span>
-        </div>
-        <hr/>
-
-        <div class="statement">
-            <!--질문멘트-->마스크 챙기는 것을 까먹는다.
-        </div>
-        <div class="decision">
-            <span class="captionAgree">동의</span>
-            <div class="options">
-                <div class="agreeMax"><span class="check"></span></div>
-                <div class="agreeMed"><span class="check"></span></div>
-                <div class="agreeMin"><span class="check"></span></div>
-                <div class="neutral"><span class="check"></span></div>
-                <div class="disagreeMin"><span class="check"></span></div>
-                <div class="disagreeMed"><span class="check"></span></div>
-                <div class="disagreeMax"><span class="check"></span></div>
-            </div>
-            <span class="captionDisagree">비동의</span>
-        </div>
-        <hr/>
-
-        <div class="statement">
-            <!--질문멘트-->코로나로 인해 사교활동을 못해 아쉽다.
-        </div>
-        <div class="decision">
-            <span class="captionAgree">동의</span>
-            <div class="options">
-                <div class="agreeMax"><span class="check"></span></div>
-                <div class="agreeMed"><span class="check"></span></div>
-                <div class="agreeMin"><span class="check"></span></div>
-                <div class="neutral"><span class="check"></span></div>
-                <div class="disagreeMin"><span class="check"></span></div>
-                <div class="disagreeMed"><span class="check"></span></div>
-                <div class="disagreeMax"><span class="check"></span></div>
-            </div>
-            <span class="captionDisagree">비동의</span>
-        </div>
-        <hr/>
-
-        <div class="statement">
-            <!--질문멘트-->코로나로 인해 좋아진 환경에 대해 긍정적이다.
-        </div>
-        <div class="decision">
-            <span class="captionAgree">동의</span>
-            <div class="options">
-                <div class="agreeMax"><span class="check"></span></div>
-                <div class="agreeMed"><span class="check"></span></div>
-                <div class="agreeMin"><span class="check"></span></div>
-                <div class="neutral"><span class="check"></span></div>
-                <div class="disagreeMin"><span class="check"></span></div>
-                <div class="disagreeMed"><span class="check"></span></div>
-                <div class="disagreeMax"><span class="check"></span></div>
-            </div>
-            <span class="captionDisagree">비동의</span>
-        </div>
-        <hr/>
-        <div class="nextButton"><span>다음</span></div>
-    </div>
+<div class="question">
+    <question-item
+            v-for="question in questions"
+            v-bind:question="question"
+            v-bind:key="question.id"
+    ></question-item>
+    <div class="nextButton"><span>다음</span></div>
+</div>
 </body>
+<script>
+    Vue.component('question-item', {
+        props: ['question'],
+        template: '<div class = "question_container"><div class="statement">' +
+            '            <!--질문멘트-->{{ question.statement }}' +
+            '        </div>' +
+            '        <div class="decision">' +
+            '            <span class="captionAgree">동의</span>' +
+            '            <div class="options">' +
+            '                <div class="agreeMax"><span class="check"></span></div>' +
+            '                <div class="agreeMed"><span class="check"></span></div>' +
+            '                <div class="agreeMin"><span class="check"></span></div>' +
+            '                <div class="neutral"><span class="check"></span></div>' +
+            '                <div class="disagreeMin"><span class="check"></span></div>' +
+            '                <div class="disagreeMed"><span class="check"></span></div>' +
+            '                <div class="disagreeMax"><span class="check"></span></div>' +
+            '            </div>' +
+            '            <span class="captionDisagree">비동의</span>' +
+            '        </div>' +
+            '        <hr/></div>'
+    })
+    var question = new Vue({
+        el: '.question',
+        data: {
+            questions: [
+                {id: 0, statement: '현재 사회적 거리두기 몇 단계인지 알고있다.'},
+                {id: 1, statement: '현재 사회적 거리두기 몇 단계인지 알고있다.2'},
+                {id: 2, statement: '현재 사회적 거리두기 몇 단계인지 알고있다.3'}
+            ]
+        }
+    })
+</script>
 
 </html>

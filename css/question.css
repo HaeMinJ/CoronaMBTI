@@ -42,6 +42,7 @@
     height: 20%;
     margin-left: 15%;
     margin-top: 1%;
+    position: relative;
   }
 
   .progress {
@@ -106,7 +107,10 @@
     margin-top: 2%;
     margin-left: 0%;
 }
-
+.question_container{
+    position: relative;
+    margin-top: 10%;
+}
 .statement {
     font-family: "Noto Sans Malayalam UI";
     font-style: normal;
@@ -232,6 +236,8 @@
     transition: 0.3s;
 }
 hr {
+    position: relative;
+    margin-top: 18%;
     width: 70%;
     text-align: center;
 }
