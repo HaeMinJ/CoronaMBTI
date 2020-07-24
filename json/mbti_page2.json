@@ -1,0 +1,7 @@
+[
+    {"id": 0, "statement": "기침을 하는 사람을 피하진 않는다.", "type" : 2, "status": 0},
+    {"id": 1, "statement": "코로나로 인해 좋아진 환경에 대해 긍정적이다.", "type" : 2 , "status" : 0},
+    {"id": 2, "statement": "확진자 동선을 수시로 확인하며 내 동선과 비교해본다.", "type" : 2 , "status" : 0},
+    {"id": 3, "statement": "코로나 예방보다 내 실무가 더 중요하다.", "type" : 2 , "status" : 0},
+    {"id": 4, "statement": "코로나 관련 기부가 하고 싶다.", "type" : 2 , "status" : 0}
+]
