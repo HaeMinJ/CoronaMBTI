@@ -96,3 +96,10 @@ button{
     clear: both;
 }
 
+progress{
+    display: table;
+    clear: both;
+    margin: 0% auto;
+}
+
+
