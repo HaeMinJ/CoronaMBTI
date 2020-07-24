@@ -88,9 +88,10 @@ h1 {
 #emoticon {
     display: table;
     position: relative;
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 25%;
     clear: both;
     padding: 5%;
     margin: 5% auto;
 }
+
