@@ -37,53 +37,37 @@ h1 {
     z-index: 1;
 }
 
-<<<<<<< HEAD
 .parent {
-  width: 80%;
-  height: 20%;
-  margin-left: 15%;
-  margin-top: 1%;
-}
+    width: 80%;
+    height: 20%;
+    margin-left: 15%;
+    margin-top: 1%;
+  }
+  
+  .progress {
+      position: relative;
+      font-family: "roboto";
+      font-weight: bold;
+      font-size: 1.5vw;
+      color: #4D4D4D;
+      z-index: 1;
+      display: block;
+      float: left;
+  }
+  
+  .progressBarBackground {
+      position: relative;
+      width: 75%;
+      height: 3%;
+      background-color: rgba(195, 195, 195, 1);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      z-index: 1;
+      float: left;
+      padding-top: 1.5%;
+      margin-left: 2%;
+      margin-right: 2%;
+  }
 
-.progress {
-    position: relative;
-    font-family: "roboto";
-    font-weight: bold;
-    font-size: 1.5vw;
-    color: #4D4D4D;
-    z-index: 1;
-    display: block;
-    float: left;
-}
-
-.progressBarBackground {
-    position: relative;
-    width: 75%;
-    height: 3%;
-    background-color: rgba(195, 195, 195, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 1;
-    float: left;
-    padding-top: 1.5%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-=======
-#myProgress {
-    width: 100%;
-    background-color: #ddd;
-}
-
-#myBar {
-    width: 10%;
-    height: 30px;
-    background-color: #4CAF50;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-}
->>>>>>> eb0ff8f66a719105d6154c7c8b68591c8a90ce65
 
 .question {
     position: relative;
