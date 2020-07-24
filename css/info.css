@@ -8,14 +8,14 @@
 
 
  #box {
-    padding: 5%;
+    padding: 1% 5% 1% 5%;
     display: table;
     position: relative;
     width: 60%;
     height: 70%;
     background-color: white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 30% auto;
+    margin: 10% auto;
     clear: both;
     z-index: 2;
 }
@@ -25,7 +25,7 @@
     display: inline-block;
     position: relative;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 4vw;
     padding: 5% 7%;
     font-family: Noto Sans Malayalam UI, serif;
 
@@ -38,8 +38,92 @@
     z-index: 3;
     display: inline-block;
     font-weight: bold;
-    font-size: 2.3vw;
+    font-size: 3vw;
     font-family: Noto Sans Malayalam UI, serif;
 
     color: #29343F;
 }
+
+#genderbox {
+    z-index: 3;
+    display: table;
+    position: relative;
+    background-color : #E9E9E9;
+    clear: both;
+    padding: 2%;
+    font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3vw;
+    /* identical to box height */
+    color: #29343F;
+}
+
+.gender{
+    z-index: 4;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.select{
+    z-index: 4;
+    position: relative;
+    padding-left: 9%;
+    padding-right: 11%;
+}
+
+.age{
+    z-index: 4;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#agebox {
+    z-index: 3;
+    display: table;
+    position: relative;
+    background-color : #E9E9E9;
+    clear: both;
+    padding: 2%;
+    font-family: Noto Sans Malayalam UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3vw;
+    /* identical to box height */
+    color: #29343F;
+    margin-top: 3%;
+}
+
+label{
+    z-index: 4;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#bottom{
+    z-index: 3;
+    position: relative;
+    font-size: 1.5vw;
+    margin-top: 10%;
+    float: left;
+}
+
+button{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7vw;
+    color: #FFFFFF;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    background-color: #749AAA;
+    width: 25%;
+    height: 4vw;
+    position: relative;
+    margin-top: 5%;
+    margin-right: 0%;
+    float: right;
+}
+
