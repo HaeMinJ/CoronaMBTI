@@ -8,8 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>코로나 상식 퀴즈</title>
-    <link rel="stylesheet" href="../css/quiz.css">
     <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 <div class="back">
@@ -22,12 +25,51 @@
 
     <div id="box">
         <span id="Q">Q</span>
-        <span id="question">코로나는 온도와 습도에 상관없이 <br>
-                전염될 수 있다. <br></span>
-        <input type="button" class="btn" value="O" >
-        <br><br>
-        <input type="button" class="btn" value="X">
+        <span id="question">{{ question }} <br></span>
+        <div class="answer_input" v-if="!isAnswered">
+            <input id="btn_true" type="button" class="btn" value="O" onclick="onAnswer(true)" >
+            <br><br>
+            <input id="btn_false" type="button" class="btn" value="X" onclick="onAnswer(false)">
+        </div>
+        <div id="answer_container" v-if="isAnswered">
+            <span id="answer">{{ answerMsg }}}</span>
+            <br>
+            <br>
+            <span id="answer_exp">{{ exp }}</span>
+        </div>
     </div>
 </div>
 </body>
+<script>
+    var quiz = {
+        question : '안녕하세요 Vue!',
+        answerMsg : '정답 : O',
+        exp : '내 위에 잠시 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다!',
+        answer : true,
+        isAnswered: false
+    }
+    var app = new Vue({
+        el: '#box',
+        data : quiz
+    })
+    function onAnswer(answer){
+        if(app.answer === answer){
+            if(answer){
+                document.getElementById('btn_true').style.backgroundColor = "#A8CCDC";
+            }else{
+                document.getElementById('btn_false').style.backgroundColor = "#A8CCDC";
+            }
+        }else{
+            if(answer){
+                document.getElementById('btn_true').style.backgroundColor = '#F1BCBC';
+            }else{
+                document.getElementById('btn_false').style.backgroundColor = '#F1BCBC';
+            }
+        }
+        setTimeout(function () {
+            app.isAnswered = true;
+        },1000)
+    }
+</script>
+
 </html>

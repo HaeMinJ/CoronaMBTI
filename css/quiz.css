@@ -58,11 +58,12 @@ h1 {
 .btn:hover{
     background-color: #C4C4C4;
 }
+.answer_input{
+    position: relative;
+}
 .btn {
     display: table;
-    position: relative;
-    bottom: 80%;
-    margin: 0% auto;
+    margin: 0 auto;
     clear: both;
     width: 80%;
     height: 6.25vw;
