@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b892608-2c68-4520-8103-0512f185865c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/question.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/question.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/mbti_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mbti_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quiz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595592918409</updated>
       <workItem from="1595592920502" duration="3614000" />
-      <workItem from="1595602342385" duration="18554000" />
+      <workItem from="1595602342385" duration="21539000" />
     </task>
     <servers />
   </component>
@@ -91,10 +90,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="328" y="106" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1595602361250" />
-    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595630882300">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595635188746">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1595630882300" />
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1595635188746" />
     <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595593864906">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
