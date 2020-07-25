@@ -41,7 +41,7 @@
                 <p id="ccomment">
                     {{ exp }}
                 </p>
-                <button onclick="onNextClicked()">다음 퀴즈</button>
+                <button id="btn_next" onclick="onNextClicked()">다음 퀴즈</button>
             </div>
 
         </div>
@@ -67,19 +67,24 @@
     { answer: true, isAnswered: false, answerMsg: "정답 : O", exp: "몇 가지 치료법이 현재 연구되고 있으며 곧 임상 테스트를 거칠 것이다.", question: '현재까지 코로나 19를 예방하거나 치료하기 위해 권장되는 의약품은 없다.' }];
     function onNextClicked() {
         questionIdx++;
-        app.question = quizList[questionIdx].question;
-        app.answerMsg = quizList[questionIdx].answerMsg;
-        app.exp = quizList[questionIdx].exp;
-        app.answer = quizList[questionIdx].answer;
-        app.isAnswered = quizList[questionIdx].isAnswered;
-        if (questionIdx == quizList.length) {
+        if (questionIdx == quizList.length - 1) {
+            console.log("question : "+questionIdx);
             var btnNext = document.getElementById('btn_next');
             btnNext.onclick = completeClicked;
-            btnNext.innerText = "결과 보기";
+            btnNext.innerHTML = "결과 보기";
+        }else{
+            app.question = quizList[questionIdx].question;
+            app.answerMsg = quizList[questionIdx].answerMsg;
+            app.exp = quizList[questionIdx].exp;
+            app.answer = quizList[questionIdx].answer;
+            app.isAnswered = quizList[questionIdx].isAnswered;
+            var p = document.getElementById("jb");
+            p.value = p.value + (140 / (quizList.length - 1));
+            document.getElementById('jb').value = p.value;
         }
-        var p = document.getElementById("jb");
-        p.value = p.value + (100 / quizList.length);
-        document.getElementById('jb').value = p.value;
+
+
+
     }
     function completeClicked() {
         location.href = "./quiz_result.html?answer=" + answerCount;

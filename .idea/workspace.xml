@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b892608-2c68-4520-8103-0512f185865c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/comment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/quiz_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quiz_result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595592918409</updated>
       <workItem from="1595592920502" duration="3614000" />
-      <workItem from="1595602342385" duration="24029000" />
+      <workItem from="1595602342385" duration="26357000" />
     </task>
     <servers />
   </component>
@@ -90,6 +90,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="328" y="106" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1595602361250" />
+    <state x="208" y="322" key="#Web_Browsers" timestamp="1595641603398">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="208" y="322" key="#Web_Browsers/0.23.1680.1027@0.23.1680.1027" timestamp="1595641603398" />
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595635188746">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -114,5 +118,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="541" y="169" width="598" height="735" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1595595821116" />
+    <state x="85" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1595641557551">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="85" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1595641557551" />
   </component>
 </project>

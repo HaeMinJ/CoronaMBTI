@@ -11,20 +11,53 @@
         <img id="background" src="http://static-yojongdo.coronambti.com/images/resultbackground.svg" alt="">
         <div id="textbox">
         <p id="subtitle">퀴즈결과!</p>
-        <p id="title">맞춘 문제 12개</p>
-        <p id="mbti">코로나찌질이</p>
+        <p id="title">맞춘 문제</p>
+        <p id="mbti"></p>
         <br>
         <p id="exp">
-            한국의 자가격리 구호물품수준은 다른 나라 사람들이 놀랄 만큼 준비가 잘되어 있다. <br>
-            이런 구호물품을 관리하는 담당 업무자들이나 현장 속에서 열심히 봉사하는 간호사 혹은 의사들은 이 유형에 해당할 가능성이 높다. <br>
-            그래서 코로나 관련 담당 업무자들은 ISFJ일 가능성이 높지 않을까? <br>
-            평소에도 남을 위해 봉사하는 사람으로 담당 업무자가 아니더라도 자신의 가까운사람이 코로나가 걸릴까 걱정되며 그들을 위해 희생적인 마음을 가지고 있는 사람들이다.
         </p>
         <br>
         <hr>
         <button id="inform">어쩌구정보보기</button>
         <button id="clear">처음으로</button>
     </div>
+
+
 </div>
 </body>
+<script>
+    function getParam(sname) {
+        var params = location.search.substr(location.search.indexOf("?") + 1);
+        var sval = "";
+        params = params.split("&");
+        for (var i = 0; i < params.length; i++) {
+            temp = params[i].split("=");
+            if ([temp[0]] == sname) { sval = temp[1]; }
+        }
+        return sval;
+    }
+
+    var answer = Number.parseInt(getParam("answer"));
+    var title = document.getElementById('title');
+    var mbti = document.getElementById('mbti');
+    var exp = document.getElementById('exp');
+
+    if(answer < 3){
+        title.innerText = '맞춘 문제 '+answer+'개';
+        mbti.innerText = '코로나찌질이';
+        exp.innerText = '\n' +
+            '한국의 자가격리 구호물품수준은 다른 나라 사람들이 놀랄 만큼 준비가 잘되어 있다. \n' +
+            '이런 구호물품을 관리하는 담당 업무자들이나 현장 속에서 열심히 봉사하는 간호사 혹은 의사들은 이 유형에 해당할 가능성이 높다. \n' +
+            '그래서 코로나 관련 담당 업무자들은 ISFJ일 가능성이 높지 않을까? \n' +
+            '평소에도 남을 위해 봉사하는 사람으로 담당 업무자가 아니더라도 자신의 가까운사람이 코로나가 걸릴까 걱정되며 그들을 위해 희생적인 마음을 가지고 있는 사람들이다.';
+    }else if( answer < 6){
+
+    }else if( answer < 9){
+
+    }else if(answer < 12){
+
+    }else if(answer < 15){
+
+    }
+</script>
 </html>
