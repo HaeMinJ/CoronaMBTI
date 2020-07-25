@@ -67,6 +67,10 @@
                     answerStatus.j += Number.parseInt(question.status, 0);
                     break;
             }
+              var p=document.getElementById("pg");
+              p.value=p.value+25;
+              document.getElementById( 'pg' ).value = p.value;
+
         });
         startPageIdx++;
         getJson(startPageIdx);
