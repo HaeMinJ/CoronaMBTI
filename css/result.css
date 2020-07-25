@@ -97,24 +97,8 @@ p {
     color: #000000;
 }
 
-#inform {
-
-    float: right;
-    padding: 1%;
-    background-color: #5D7794;
-
-    font-family: Noto Sans Malayalam UI;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2vw;
-    /* identical to box height */
-
-
-    color: #FFFFFF;
-
-}
-
 #clear {
+    float: right;
     padding: 1%;
     background-color: #5D7794;
 
