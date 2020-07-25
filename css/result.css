@@ -101,6 +101,7 @@ p {
     float: right;
     padding: 1%;
     background-color: #5D7794;
+    cursor: pointer;
 
     font-family: Noto Sans Malayalam UI;
     font-style: normal;
