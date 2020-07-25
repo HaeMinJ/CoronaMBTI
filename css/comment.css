@@ -3,7 +3,7 @@
  */
 
 body{
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 }
 
 h1{
@@ -30,7 +30,7 @@ h1{
     font-weight: bold;
     font-size: 3vw;
     padding: 1% 1% 5% 0;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 }
 #ctitle2{
     z-index: 3;
@@ -40,7 +40,7 @@ h1{
     font-size: 2.3vw;
     padding-left: 2%;
     padding-right: 2%;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 }
 
 #cox{
@@ -53,7 +53,7 @@ h1{
     padding-right: 10%;
     line-height: 0.5vw;
     font-size: 2vw;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 }
 
 #ccomment{
@@ -65,7 +65,7 @@ h1{
     font-size: 1.5vw;
     font-weight: bolder;
     line-height: 1.7vw;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
     color: dimgrey;
 }
 

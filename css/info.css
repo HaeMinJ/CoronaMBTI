@@ -3,7 +3,7 @@
  */
 
  body{
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 }
 
 
@@ -27,7 +27,7 @@
     font-weight: bold;
     font-size: 4vw;
     padding: 5% 7%;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 
     color: #3A3042;
 
@@ -39,7 +39,7 @@
     display: inline-block;
     font-weight: bold;
     font-size: 3vw;
-    font-family: Noto Sans Malayalam UI, serif;
+    font-family: Noto Sans Malayalam UI;
 
     color: #29343F;
 }
