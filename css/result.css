@@ -128,3 +128,11 @@ p {
     color: #FFFFFF;
 
 }
+
+#mbti_img{
+    width: 35%;
+    height:40%;
+    margin: 0% auto;
+    display: table;
+    clear: both;
+}
