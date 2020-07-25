@@ -22,19 +22,6 @@ h1{
     position: absolute;
     z-index: 1;
 }
-#rec{
-    display: table;
-    position: relative;
-    width: 50%;
-    height: 70%;
-    margin: 5% 20%;
-    padding: 4%;
-    background-color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    clear: both;
-    color: #29343F;
-    z-index: 2;
-}
 
 #ctitle1{
     z-index: 3;
