@@ -43,20 +43,7 @@ var startPageIdx = 0;
         window.scrollTo(0, 0);
     }
     function onCompleteClicked() {
-        switch (question.type) {
-        case 0:
-            answerStatus.e += Number.parseInt(question.status, 0);
-            break;
-        case 1:
-            answerStatus.s += Number.parseInt(question.status, 0);
-            break;
-        case 2:
-            answerStatus.t += Number.parseInt(question.status, 0);
-            break;
-        case 3:
-            answerStatus.j += Number.parseInt(question.status, 0);
-            break;
-    }
+        
         location.href = './mbti_result.html?e='+answerStatus.e+'&s='+answerStatus.s+"&t="+answerStatus.t+"&j="+answerStatus.j;
         console.log("E : "+answerStatus.e +" S : "+answerStatus.s +" T :" +answerStatus.t+" J :"+answerStatus.j);
     }
