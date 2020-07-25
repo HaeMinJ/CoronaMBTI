@@ -30,9 +30,3 @@ var q = new Vue({
         q.computed.nextQuestion();
     }
 });
-
-function pgFunc() {
-    var p=document.getElementById("pg");
-    p.value=p.value+25;
-    document.getElementById( 'pg' ).value = p.value;
-}

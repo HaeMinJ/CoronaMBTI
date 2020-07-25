@@ -38,7 +38,7 @@
             v-bind:question="question"
             v-bind:key="question.id"
     ></question-item>
-    <div id = "nextButton" onclick="onNextClicked()" onclick="pgFunc()"><span>다음</span></div>
+    <div id = "nextButton" onclick="onNextClicked()"><span>다음</span></div>
 </div>
 </body>
 
@@ -52,6 +52,9 @@
     } // 동의 +3 ~ -3 비동의
 
     function onNextClicked() {
+      var p=document.getElementById("pg");
+      p.value=p.value+25;
+      document.getElementById( 'pg' ).value = p.value;
         app.questions.forEach(function (question) {
             switch (question.type) {
                 case 0:
@@ -67,6 +70,7 @@
                     answerStatus.j += Number.parseInt(question.status, 0);
                     break;
             }
+
         });
         startPageIdx++;
         getJson(startPageIdx);
