@@ -46,7 +46,6 @@
 
 #genderbox {
     z-index: 3;
-    display: table;
     position: relative;
     background-color : #E9E9E9;
     clear: both;
@@ -82,7 +81,6 @@
 
 #agebox {
     z-index: 3;
-    display: table;
     position: relative;
     background-color : #E9E9E9;
     clear: both;
