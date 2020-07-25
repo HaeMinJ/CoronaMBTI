@@ -78,3 +78,13 @@ h1 {
     font-weight: bold;
     color: #525252;
 }
+
+progress{
+    display: table;
+    clear: both;
+    margin: 0% auto;
+}
+
+button{
+    padding: 2%;
+}

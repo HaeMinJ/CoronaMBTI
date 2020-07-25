@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,55 +16,55 @@
     <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="../css/comment.css">
 </head>
-<body>
-<div class="back">
-    <div class="back">
-        <img class="background" src="../assets/background.svg" alt="배경 사진">
-    </div>
-    <h1>
-        코로나 상식 퀴즈
-    </h1>
 
-    <div id="box">
-        <span id="Q">Q</span>
-        <span id="question">{{ question }} <br></span>
-        <div class="answer_input" v-if="!isAnswered">
-            <input id="btn_true" type="button" class="btn" value="O" onclick="onAnswer(true)" >
-            <br><br>
-            <input id="btn_false" type="button" class="btn" value="X" onclick="onAnswer(false)">
+<body>
+    <div class="back">
+        <div class="back">
+            <img class="background" src="../assets/background.svg" alt="배경 사진">
         </div>
-        <div id="rec" v-if="isAnswered">
-            <p id="cox">
-                {{ answerMsg }}
-            </p>
-            <p id="ccomment">
-                {{ exp }}
-            </p>
-            <button onclick="onNextClicked()">다음 퀴즈</button>
+        <h1>
+            코로나 상식 퀴즈
+        </h1>
+
+        <div id="box">
+            <span id="Q">Q</span>
+            <span id="question">{{ question }} <br></span>
+            <div class="answer_input" v-if="!isAnswered">
+                <input id="btn_true" type="button" class="btn" value="O" onclick="onAnswer(true)">
+                <br><br>
+                <input id="btn_false" type="button" class="btn" value="X" onclick="onAnswer(false)">
+            </div>
+            <div id="rec" v-if="isAnswered">
+                <p id="cox">
+                    {{ answerMsg }}
+                </p>
+                <p id="ccomment">
+                    {{ exp }}
+                </p>
+                <button onclick="onNextClicked()">다음 퀴즈</button>
+            </div>
+
         </div>
-        <div>
-            <progress value="0" max="140" id="jb" style="width: 58%; height: 0.5rem; "></progress>
-        </div>
+        <progress value="0" max="140" id="jb" style="width: 58%; height: 0.5rem; margin-bottom: 5%;"></progress>
     </div>
-</div>
 </body>
 <script>
     var questionIdx = 0;
     var answerCount = 0;
-    var quizList = [{answer : true, isAnswered : false, answerMsg : "정답 : O", exp : "가장 좋은 방법은 손을 자주 씻는 것 \n 코로나 19는 덥고 습한 지역에서도 전염될 수 있다.",question : '코로나는 모든 지역에서 전염 가능하다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"정상적인 인간의 몸은 외부 기온과 기후와 상관없이 36.5도에서 37도의 체온을 유지" ,question : '날씨가 추워지면 코로나는 사라질 것이다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"목욕이나 샤워 온도에 관계없이 정상적인 인간의 몸은 36.5도에서 37도의 체온을 유지" ,question : '뜨거운 물로 목욕하면 코로나 19 바이러스를 죽일 수 있다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"코로나는 감염된 사람이 기침이나 재채기를 할 때 발생하는 비말이나 코에서 분비되는 타액을 통해 퍼지는 호흡기 바이러스다." ,question : '코로나19는 모기를 통해 전염될 수 있다.'},
-        {answer : true, isAnswered : false, answerMsg : "정답 : O", exp :"손을 닦은 후에는 종이 타월이나 따뜻한 공기 건조기를 사용하여 손을 완전히 말려야 한다." ,question : '핸드 드라이어는 코로나19를 죽이는 데 효과적이지 않다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"손이나 다른 부위를 소독하기 위해 자외선 살균기를 사용하면 불필요한 피부 자극을 유발할 수 있다." ,question : '코로나19를 죽이기 위해서는 자외선 살균기를 사용하면 된다.'},
-        {answer : true, isAnswered : false, answerMsg : "정답 : O", exp :"하지만 무증상 감염자들은 감지할 수 없다. \n 통상적으로 코로나19에 감염된 사람이 아프고 열이 나기까지는 2일에서 10일이 걸린다." ,question : '열 스캐너는 코로나 19에 감염되어 발열 증상이 있는 사람을 감지하는데 효과적이다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"이러한 물질을 뿌리면 옷이나 점막(눈,입)에 피해를 입힐 수 있다." ,question : '몸 전체에 알코올이나 염소를 뿌리면 몸속의 바이러스는 죽는다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"코로나19는 매우 새롭고 다르기 때문에 별도의 백신이 필요하다 \n코로나19에는 효과가 없다 할지라도 호흡기 질환과 관련된 백신을 맞아두는 것은 건강에 큰 도움이 된다."  ,question : '폐염 구균 백식 및 헤모필루스 인플루엔자 B형 백신과 같은 폐렴 예방 백신은 코로나19에 대한 보호를 제공한다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"정기적으로 식염수로 코를 헹구면 감기에서 더 빨리 회복될 수 있다는 연구가 있지만 이것도 확실하지는 않음. \n 호흡기 감염을 예방해준다는 증거도 아직까지 나오지 않고 있다." ,question : '식염수로 코를 자주 헹구면 코로나19 예방에 효과적이다.'},
-        {answer : false, isAnswered : false, answerMsg : "정답 : X", exp :"마늘은 항균 성분이 일부 들어있는 건강식품이다." ,question : '마늘을 먹는 것은 코로나 예방에 도움이 된다.'},
-        {answer : true, isAnswered : false, answerMsg : "정답 : O", exp :"하지만 노인과 기저질환(천식, 당뇨병, 심장병 등)을 가진 사람들이 더 심한 증상을 나타낸다." ,question : '모든 연령대의 사람들이 코로나19에 감염될 수 있다.'},
-        {answer : true, isAnswered : false, answerMsg : "정답 : O", exp :"코로나19는 박테리아가 아니라 바이러스이므로 항생제를 예방 또는 치료수단으로 사용해서는 안된다. \n하지만 코로나19로 인해 병원에 입원한 경우 다른 감염이 진행될 가능성이 있기 때문에 항생제를 처방할 수 있다." ,question : '항생제는 바이러스가 아니라 박테리아에 작용하는 의약품이다.'},
-        {answer : true, isAnswered : false, answerMsg : "정답 : O", exp :"몇 가지 치료법이 현재 연구되고 있으며 곧 임상 테스트를 거칠 것이다." ,question : '현재까지 코로나 19를 예방하거나 치료하기 위해 권장되는 의약품은 없다.'}];
+    var quizList = [{ answer: true, isAnswered: false, answerMsg: "정답 : O", exp: "가장 좋은 방법은 손을 자주 씻는 것 \n 코로나 19는 덥고 습한 지역에서도 전염될 수 있다.", question: '코로나는 모든 지역에서 전염 가능하다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "정상적인 인간의 몸은 외부 기온과 기후와 상관없이 36.5도에서 37도의 체온을 유지", question: '날씨가 추워지면 코로나는 사라질 것이다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "목욕이나 샤워 온도에 관계없이 정상적인 인간의 몸은 36.5도에서 37도의 체온을 유지", question: '뜨거운 물로 목욕하면 코로나 19 바이러스를 죽일 수 있다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "코로나는 감염된 사람이 기침이나 재채기를 할 때 발생하는 비말이나 코에서 분비되는 타액을 통해 퍼지는 호흡기 바이러스다.", question: '코로나19는 모기를 통해 전염될 수 있다.' },
+    { answer: true, isAnswered: false, answerMsg: "정답 : O", exp: "손을 닦은 후에는 종이 타월이나 따뜻한 공기 건조기를 사용하여 손을 완전히 말려야 한다.", question: '핸드 드라이어는 코로나19를 죽이는 데 효과적이지 않다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "손이나 다른 부위를 소독하기 위해 자외선 살균기를 사용하면 불필요한 피부 자극을 유발할 수 있다.", question: '코로나19를 죽이기 위해서는 자외선 살균기를 사용하면 된다.' },
+    { answer: true, isAnswered: false, answerMsg: "정답 : O", exp: "하지만 무증상 감염자들은 감지할 수 없다. \n 통상적으로 코로나19에 감염된 사람이 아프고 열이 나기까지는 2일에서 10일이 걸린다.", question: '열 스캐너는 코로나 19에 감염되어 발열 증상이 있는 사람을 감지하는데 효과적이다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "이러한 물질을 뿌리면 옷이나 점막(눈,입)에 피해를 입힐 수 있다.", question: '몸 전체에 알코올이나 염소를 뿌리면 몸속의 바이러스는 죽는다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "코로나19는 매우 새롭고 다르기 때문에 별도의 백신이 필요하다 \n코로나19에는 효과가 없다 할지라도 호흡기 질환과 관련된 백신을 맞아두는 것은 건강에 큰 도움이 된다.", question: '폐염 구균 백식 및 헤모필루스 인플루엔자 B형 백신과 같은 폐렴 예방 백신은 코로나19에 대한 보호를 제공한다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "정기적으로 식염수로 코를 헹구면 감기에서 더 빨리 회복될 수 있다는 연구가 있지만 이것도 확실하지는 않음. \n 호흡기 감염을 예방해준다는 증거도 아직까지 나오지 않고 있다.", question: '식염수로 코를 자주 헹구면 코로나19 예방에 효과적이다.' },
+    { answer: false, isAnswered: false, answerMsg: "정답 : X", exp: "마늘은 항균 성분이 일부 들어있는 건강식품이다.", question: '마늘을 먹는 것은 코로나 예방에 도움이 된다.' },
+    { answer: true, isAnswered: false, answerMsg: "정답 : O", exp: "하지만 노인과 기저질환(천식, 당뇨병, 심장병 등)을 가진 사람들이 더 심한 증상을 나타낸다.", question: '모든 연령대의 사람들이 코로나19에 감염될 수 있다.' },
+    { answer: true, isAnswered: false, answerMsg: "정답 : O", exp: "코로나19는 박테리아가 아니라 바이러스이므로 항생제를 예방 또는 치료수단으로 사용해서는 안된다. \n하지만 코로나19로 인해 병원에 입원한 경우 다른 감염이 진행될 가능성이 있기 때문에 항생제를 처방할 수 있다.", question: '항생제는 바이러스가 아니라 박테리아에 작용하는 의약품이다.' },
+    { answer: true, isAnswered: false, answerMsg: "정답 : O", exp: "몇 가지 치료법이 현재 연구되고 있으며 곧 임상 테스트를 거칠 것이다.", question: '현재까지 코로나 19를 예방하거나 치료하기 위해 권장되는 의약품은 없다.' }];
     function onNextClicked() {
         questionIdx++;
         app.question = quizList[questionIdx].question;
@@ -71,35 +72,35 @@
         app.exp = quizList[questionIdx].exp;
         app.answer = quizList[questionIdx].answer;
         app.isAnswered = quizList[questionIdx].isAnswered;
-        if(questionIdx == quizList.length){
+        if (questionIdx == quizList.length) {
             var btnNext = document.getElementById('btn_next');
             btnNext.onclick = completeClicked;
             btnNext.innerText = "결과 보기";
         }
-        var p=document.getElementById("jb");
-        p.value=p.value+(100 / quizList.length);
-        document.getElementById( 'jb' ).value = p.value;
+        var p = document.getElementById("jb");
+        p.value = p.value + (100 / quizList.length);
+        document.getElementById('jb').value = p.value;
     }
     function completeClicked() {
-        location.href = "./quiz_result.html?answer="+answerCount;
+        location.href = "./quiz_result.html?answer=" + answerCount;
     }
 
     var app = new Vue({
         el: '#box',
-        data : quizList[0]
+        data: quizList[0]
     })
-    function onAnswer(answer){
-        if(app.answer === answer){
-            if(answer){
+    function onAnswer(answer) {
+        if (app.answer === answer) {
+            if (answer) {
                 document.getElementById('btn_true').style.backgroundColor = "#A8CCDC";
-            }else{
+            } else {
                 document.getElementById('btn_false').style.backgroundColor = "#A8CCDC";
             }
             answerCount++;
-        }else{
-            if(answer){
+        } else {
+            if (answer) {
                 document.getElementById('btn_true').style.backgroundColor = '#F1BCBC';
-            }else{
+            } else {
                 document.getElementById('btn_false').style.backgroundColor = '#F1BCBC';
             }
         }
@@ -107,7 +108,7 @@
         document.getElementById('btn_false').onclick = null;
         setTimeout(function () {
             app.isAnswered = true;
-        },1000)
+        }, 1000)
     }
 </script>
 
